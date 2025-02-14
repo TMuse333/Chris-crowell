@@ -169,7 +169,7 @@ const TextAndList:React.FC<Props> = ({
               height={1300}
                 src={src}
                 alt={alt}
-                className="rounded-xl relative md:w-[50vw] w-[90vw] h-[80vh] md:h-[45vw] max-h-[467px]
+                className="rounded-xl relative md:w-[50vw] w-[90vw] h-[80vh] md:h-[55vw] max-h-[567px]
                 max-w-[668px] mx-auto object-cover"
               />
             )}

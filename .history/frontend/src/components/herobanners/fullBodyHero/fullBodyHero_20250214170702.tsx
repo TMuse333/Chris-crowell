@@ -32,7 +32,7 @@ const FullBodyHero = () => {
   const handleStartFadeIn = () => {
     setTimeout(() => {
       setStartFadeIn(true);
-    }, 500);
+    }, 100);
 
   }
     return (

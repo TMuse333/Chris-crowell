@@ -63,23 +63,6 @@ export const lorem60 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit
     reverse: false,
     aspectHeader: 'Why Choose Lorem Ipsum?',
   };
-
-  //interface Props {
-//     title?: string;
-//     description?: string;
-//     bgImage?:boolean
-//     images: {
-//         src: string;
-//         alt: string;
-//         title:string,
-//         description:string,
-//         link?:string,
-//         date?:string
-       
-//     }[];
-//     iframe?:boolean
-   
-// }
   
   export const testimonialsData = {
     title: "What Clients Say About Chris",

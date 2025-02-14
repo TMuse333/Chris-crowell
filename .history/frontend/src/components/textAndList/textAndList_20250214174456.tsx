@@ -169,8 +169,8 @@ const TextAndList:React.FC<Props> = ({
               height={1300}
                 src={src}
                 alt={alt}
-                className="rounded-xl relative md:w-[50vw] w-[90vw] h-[80vh] md:h-[45vw] max-h-[467px]
-                max-w-[668px] mx-auto object-cover"
+                className="rounded-xl relative md:w-[50vw] w-[90vw] h-[80vh] md:h-[55vw] max-h-[567px]
+                max-w-[668px] mx-auto '}"
               />
             )}
             <p className="text-black
@@ -183,8 +183,7 @@ const TextAndList:React.FC<Props> = ({
     
           {/* Accordion Section */}
           <section
-            className={` rounded-xl mx-auto w-[90vw] p-5  max-w-[800px]
-            my-auto`}
+            className={` rounded-xl mx-auto w-[90vw] p-5 mb-7 max-w-[800px]`}
           >
             <div className="space-y-4">
               {listAspects.map((aspect, index) => (

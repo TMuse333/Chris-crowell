@@ -32,7 +32,7 @@ const FullBodyHero = () => {
   const handleStartFadeIn = () => {
     setTimeout(() => {
       setStartFadeIn(true);
-    }, 500);
+    }, 1300);
 
   }
     return (
@@ -41,17 +41,16 @@ const FullBodyHero = () => {
        <header className="
        md:min-h-screen relative items-center 
        mx-auto  text-black
-      max-w-[1200px] text-white
+      max-w-[1200px]
        relative z-[3] "
     //    style={{
     //     background: 'radial-gradient(circle, #00bfff -150%, rgba(0, 191, 255, 0%) 80%)'
     //   }}
       >
        <video
-        className="w-full h-full
-        absolute object-cover
-        z-[1]"
-        
+        className="max-w-full h-auto
+        absolute"
+        controls
         loop
         muted
         autoPlay
@@ -59,7 +58,7 @@ const FullBodyHero = () => {
         <source src="skyline.mp4" type="video/mp4" />
         <p>Your browser does not support HTML5 video.</p>
       </video>
-        <DiagonalClipContainer/>
+        {/* <DiagonalClipContainer/> */}
         <section className="mx-auto 
         mt-auto items-center md:min-h-screen
         justify-center  relative   
@@ -79,7 +78,7 @@ const FullBodyHero = () => {
           <Image
           src={network}
           alt="logo"
-          className="w-[70vw] max-w-[800px] mx-auto z-[2]
+          className="w-[70vw] max-w-[800px] mx-auto
           md:self-start md:mr-auto md:ml-12 object-contain"
           />
              <motion.h2

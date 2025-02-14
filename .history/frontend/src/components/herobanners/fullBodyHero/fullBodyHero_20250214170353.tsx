@@ -32,7 +32,7 @@ const FullBodyHero = () => {
   const handleStartFadeIn = () => {
     setTimeout(() => {
       setStartFadeIn(true);
-    }, 500);
+    }, 1300);
 
   }
     return (
@@ -51,7 +51,7 @@ const FullBodyHero = () => {
         className="w-full h-full
         absolute object-cover
         z-[1]"
-        
+        controls
         loop
         muted
         autoPlay

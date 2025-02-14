@@ -1,7 +1,6 @@
 
 import React, { useState, useRef, useEffect } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
-
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import {motion, useInView} from 'framer-motion'
 import { useGeneralContext } from "@/context/context";
 import Image from "next/image";
@@ -66,18 +65,17 @@ parentInView
         variants={slideInVariants(index * 0.15)}
         initial='initial'
         animate={(!isMobile && parentInView) || inView ? 'animate' : 'initial'}
-        className="bg-button-color rounded-3xl overflow-hidden 
-        border border-black border-2 text-black">
+        className="bg-button-color rounded-3xl overflow-hidden ">
         <button
-          className="w-full flex justify-between items-center text-left text-black p-4 font-semibold bg-button-color rounded-t-lg focus:outline-none"
+          className="w-full flex justify-between items-center text-left text-white p-4 font-semibold bg-button-color rounded-t-lg focus:outline-none"
           onClick={() => handleClick(index)}
         >
           <span className="">{title}</span>
           <span>
             {isSelected ? (
-              <ChevronUp />
+              <FaChevronUp />
             ) : (
-              <ChevronDown />
+              <FaChevronDown />
             )}
           </span>
         </button>
@@ -87,7 +85,7 @@ parentInView
           }`}
         >
           <div className="p-4">
-            <p className="text-black">{description}</p>
+            <p className="text-white">{description}</p>
           </div>
         </div>
       </motion.div>
@@ -155,10 +153,10 @@ const TextAndList:React.FC<Props> = ({
         <section ref={ref}
         className="flex flex-col md:flex-row
          text-black md:w-[90vw]
-        mx-auto ">
+        mx-auto">
           {/* Top Section */}
           <section className="flex flex-col justify-center items-center
-          space-y-4 p-4
+          md:items-start space-y-4 p-4
           mb-auto text-center">
             <h3 className="text-lg font-semibold text-gray-700">{subTitle}</h3>
             <h2 className="text-3xl font-bold text-gray-900
@@ -169,22 +167,21 @@ const TextAndList:React.FC<Props> = ({
               height={1300}
                 src={src}
                 alt={alt}
-                className="rounded-xl relative md:w-[50vw] w-[90vw] h-[80vh] md:h-[45vw] max-h-[467px]
-                max-w-[668px] mx-auto object-cover"
+                className="w-[80vw]  max-h-[500px] object-contain
+                mr-auto"
               />
             )}
             <p className="text-black
             md:text-left">{description}</p>
             <button className="p-3 rounded-2xl
-            bg-button-color text-black">
+            bg-button-color text-white">
                 click the button
             </button>
           </section>
     
           {/* Accordion Section */}
           <section
-            className={` rounded-xl mx-auto w-[90vw] p-5  max-w-[800px]
-            my-auto`}
+            className={` rounded-xl mx-auto w-[90vw] p-5 mb-7 max-w-[800px]`}
           >
             <div className="space-y-4">
               {listAspects.map((aspect, index) => (

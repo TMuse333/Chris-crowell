@@ -63,31 +63,14 @@ export const lorem60 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit
     reverse: false,
     aspectHeader: 'Why Choose Lorem Ipsum?',
   };
-
-  //interface Props {
-//     title?: string;
-//     description?: string;
-//     bgImage?:boolean
-//     images: {
-//         src: string;
-//         alt: string;
-//         title:string,
-//         description:string,
-//         link?:string,
-//         date?:string
-       
-//     }[];
-//     iframe?:boolean
-   
-// }
   
-  export const testimonialsData = {
+  const testimonialsData = {
     title: "What Clients Say About Chris",
     description: "Discover how Chris has helped homeowners buy and sell properties with ease, providing expert guidance and outstanding results.",
     bgImage: false,
     images: [
         {
-            src: "/client.png",
+            src: "/testimonials/john-emily.jpg",
             alt: "John and Emily's Success Story",
             title: "Buying Our Dream Home: How Chris Made the Process Stress-Free and Exciting",
             description: "John and Emily found their perfect home with Chris' expert guidance. His knowledge, patience, and negotiation skills made their first-time homebuying experience smooth and enjoyable.",
@@ -95,7 +78,7 @@ export const lorem60 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit
             date: "2024-01-15"
         },
         {
-          src: "/client.png",
+            src: "/testimonials/sandra.jpg",
             alt: "Sandra's Home Sale Story",
             title: "Selling Fast and Above Asking: How Chris Helped Me Maximize My Home’s Value",
             description: "Sandra needed to sell her home quickly. With Chris' strategic marketing and pricing expertise, she received multiple offers and sold above asking price within days.",
@@ -103,7 +86,7 @@ export const lorem60 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit
             date: "2023-11-28"
         },
         {
-          src: "/client.png",
+            src: "/testimonials/mike-linda.jpg",
             alt: "Mike and Linda's Investment Success",
             title: "Investing with Confidence: How Chris Helped Us Build Our Real Estate Portfolio",
             description: "Mike and Linda wanted to start investing in real estate. Chris guided them through smart property selections, helping them secure high-value investments with great returns.",
@@ -111,7 +94,7 @@ export const lorem60 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit
             date: "2024-02-05"
         },
         {
-          src: "/client.png",
+            src: "/testimonials/daniel.jpg",
             alt: "Daniel’s Relocation Story",
             title: "Relocating Made Easy: How Chris Helped Me Find the Perfect Home in Halifax",
             description: "Daniel relocated to Halifax for work and was overwhelmed by the housing market. Chris' local expertise and dedication made the transition seamless and stress-free.",

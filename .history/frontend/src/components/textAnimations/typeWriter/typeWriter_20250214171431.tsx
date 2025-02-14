@@ -41,14 +41,14 @@ const BlockInTextCard = ({
      
       <div className="mb-[-1rem]">
         <Typewrite examples={examples} />
-        <hr className="border-white" />
+        <hr className="border-wht" />
       </div>
       <section className="flex items-center relative z-[3] mt-[-1rem]">
-      <button className=" rounded-full border border-white p-3 text-lg border-3 font-medium transition-colors hover:bg-neutral-950 hover:text-neutral-100
+      <button className=" rounded-full border border-neutral-950 p-3 text-lg font-medium transition-colors hover:bg-neutral-950 hover:text-neutral-100
       mr-4">
         Contact
       </button>
-      <button className=" rounded-full border border-white border-3 p-3 text-lg font-medium transition-colors hover:bg-neutral-950 hover:text-neutral-100">
+      <button className=" rounded-full border border-neutral-950 p-3 text-lg font-medium transition-colors hover:bg-neutral-950 hover:text-neutral-100">
         Free e-book
       </button>
   
@@ -78,8 +78,7 @@ const Typewrite = ({ examples }: { examples: string[] }) => {
   }, []);
 
   return (
-    <p className="mb-2.5 text-xl  md:text-2xl font-light uppercase
-    font-semibold
+    <p className="mb-2.5 text-md sm:text-lg md:text-xl font-light uppercase
     relative z-[3]">
       <span className="inline-block size-2 bg-neutral-950" />
       <span className="ml-3">

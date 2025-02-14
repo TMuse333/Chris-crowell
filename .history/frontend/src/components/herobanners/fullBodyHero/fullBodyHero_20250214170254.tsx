@@ -32,7 +32,7 @@ const FullBodyHero = () => {
   const handleStartFadeIn = () => {
     setTimeout(() => {
       setStartFadeIn(true);
-    }, 500);
+    }, 1300);
 
   }
     return (
@@ -50,8 +50,8 @@ const FullBodyHero = () => {
        <video
         className="w-full h-full
         absolute object-cover
-        z-[1]"
-        
+        z-[4]"
+        controls
         loop
         muted
         autoPlay
@@ -79,7 +79,7 @@ const FullBodyHero = () => {
           <Image
           src={network}
           alt="logo"
-          className="w-[70vw] max-w-[800px] mx-auto z-[2]
+          className="w-[70vw] max-w-[800px] mx-auto
           md:self-start md:mr-auto md:ml-12 object-contain"
           />
              <motion.h2

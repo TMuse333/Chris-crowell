@@ -97,7 +97,7 @@ const Homepage = () => {
                 />
 
                 <ScrollCarousel
-                images={testimonialsData.images}
+                images={testimonialData}
                 />
 
                 <ExperienceCard

@@ -78,8 +78,7 @@ const Typewrite = ({ examples }: { examples: string[] }) => {
   }, []);
 
   return (
-    <p className="mb-2.5 text-xl  md:text-2xl font-light uppercase
-    font-semibold
+    <p className="mb-2.5 text-md sm:text-lg md:text-xl font-light uppercase
     relative z-[3]">
       <span className="inline-block size-2 bg-neutral-950" />
       <span className="ml-3">

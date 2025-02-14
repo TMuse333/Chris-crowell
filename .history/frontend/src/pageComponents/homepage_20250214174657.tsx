@@ -20,8 +20,7 @@ import HouseSvg from "@/components/svgComponents/houseSvg/houseSvg";
 import DollarSignSvg from "@/components/svgComponents/dollarSign/dollarSignSvg";
 import HouseMoney from "@/components/svgComponents/houseMoney/houseMoney";
 import FadeInFromLeftText from "@/components/textAnimations/fadeInFromLeftText/fadeInFromLeftText";
-import ScrollCarousel from "@/components/carousels/scrollCarousel/scrollCarousel";
-import { testimonialsData } from "@/data/homepageData";
+
 const Homepage = () => {
 
     
@@ -86,18 +85,12 @@ const Homepage = () => {
                 // objectContain
                 />
 
-               
-
-                <TextAndList
-                {...textAndListData}
-                />
-
-<TextParallaxContentExample
+                <TextParallaxContentExample
                 {...parallaxTextContentData}
                 />
 
-                <ScrollCarousel
-                images={testimonialsData.images}
+                <TextAndList
+                {...textAndListData}
                 />
 
                 <ExperienceCard
