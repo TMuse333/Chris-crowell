@@ -153,15 +153,12 @@ animate={{
       
             </section>
          <motion.div
-             initial={{y:-100,
+             initial={{y:30,
             opacity:0}}
             animate={{
               opacity:1 ,
               y: 0 ,
-              transition:{
-                duration:2,
-               
-              }
+              transition:
             }}
           onAnimationComplete={handleStartFadeIn}
   className="md:absolute md:bottom-0 md:right-[0%] 

@@ -153,7 +153,7 @@ animate={{
       
             </section>
          <motion.div
-             initial={{y:-100,
+             initial={{y:-300,
             opacity:0}}
             animate={{
               opacity:1 ,
