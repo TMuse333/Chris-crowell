@@ -28,9 +28,9 @@ const HouseMoney = () => {
 
             <HouseSvg
             isClicked={isClicked}/>
-            <DollarSignSvg
+            {/* <DollarSignSvg
              isClicked={isClicked}
-            />
+            /> */}
             {/* </div>
             <p className="text-center">slatty</p> */}
 

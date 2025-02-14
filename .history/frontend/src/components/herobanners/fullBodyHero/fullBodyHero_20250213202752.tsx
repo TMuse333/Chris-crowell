@@ -139,7 +139,7 @@ animate={{
           <FadeInFromLeftText
           className=" p-6 font-semibold 
           bg-opacity-[0.4]
-         rounded-2xl 
+         rounded-2xl self-start
          w-[50vw] mr-auto 
           text-xl relative z-[2]
           "

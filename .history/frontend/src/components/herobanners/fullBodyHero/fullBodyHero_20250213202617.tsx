@@ -137,10 +137,10 @@ animate={{
 
 
           <FadeInFromLeftText
-          className=" p-6 font-semibold 
-          bg-opacity-[0.4]
-         rounded-2xl 
-         w-[50vw] mr-auto 
+          className="mx-auto p-6 font-semibold 
+         bg-grway-100 bg-opacity-[0.4]
+         rounded-2xl
+         w-[50vw]
           text-xl relative z-[2]
           "
           text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime id nostrum sit deleniti dolores. Libero sed laborum exercitationem et porro veniam necessitatibus voluptatum autem a!"

@@ -137,10 +137,9 @@ animate={{
 
 
           <FadeInFromLeftText
-          className=" p-6 font-semibold 
-          bg-opacity-[0.4]
-         rounded-2xl 
-         w-[50vw] mr-auto 
+          className="mx-auto p-6 font-semibold 
+         bg-grway-100 bg-opacity-[0.4]
+         rounded-2xl
           text-xl relative z-[2]
           "
           text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime id nostrum sit deleniti dolores. Libero sed laborum exercitationem et porro veniam necessitatibus voluptatum autem a!"
@@ -152,18 +151,18 @@ animate={{
       
             </section>
          <motion.div
-             initial={{y:30,
-            opacity:0}}
-            animate={{
-              opacity:startFullBody ? 1 : 0,
-              y:startFullBody ? 0 : 30,
-            }}
+             // initial={{y:30,
+          //   opacity:0}}
+          //   animate={{
+          //     opacity:startFullBody ? 1 : 0,
+          //     y:startFullBody ? 0 : 30,
+          //   }}
           onAnimationComplete={handleStartFadeIn}
   className="md:absolute md:bottom-0 md:right-[0%] 
   z-[3] mt-auto h-[80vh] w-[50vw]
   max-w-[535px]
   flex flex-col justify-end"
-
+  onAnimationComplete={handleStartFadeIn}
 >
   <Image
     src={tom}

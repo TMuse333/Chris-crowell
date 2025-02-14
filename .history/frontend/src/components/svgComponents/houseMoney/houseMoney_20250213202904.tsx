@@ -20,8 +20,7 @@ const HouseMoney = () => {
       }, []);
 
     return (
-        <div className="md:w-[50vw] bg-gradient-to-b from-[#0077b3] to-blue-300 relative   rounded-2xl  w-[90vw] h-[60vh] md:h-[55vw] max-h-[567px] max-w-[568px] mx-auto
-        relative z-[5]"
+        <div className="md:w-[50vw] bg-gradient-to-b from-[#0077b3] to-blue-300 relative flex flex-col  rounded-2xl  w-[90vw] h-[60vh] md:h-[55vw] max-h-[567px] max-w-[568px] mx-auto"
         onClick={()=>setIsClicked(!isClicked)}>
 
 {/* <div className="flex w-full h-[80%] "> */}

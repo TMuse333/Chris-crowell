@@ -34,12 +34,12 @@ const FullBodyHero = () => {
 
   }
     return (
-// bg-gradient-to-tr from-blue-200 to-blue-100
+
         
        <header className="
        md:min-h-screen relative items-center 
-       mx-auto  text-black
-      max-w-[1200px]
+       mx-auto max-w-[2200px] text-black
+       bg-gradient-to-tr from-blue-200 to-blue-100
        relative z-[3] "
     //    style={{
     //     background: 'radial-gradient(circle, #00bfff -150%, rgba(0, 191, 255, 0%) 80%)'
@@ -49,15 +49,13 @@ const FullBodyHero = () => {
         <section className="mx-auto 
         mt-auto items-center md:min-h-screen
         justify-center  relative   
-          flex flex-col md:flex-row
-      
-          md:mr-auto">
+          flex flex-col md:flex-row">
 
       
         <section className="flex flex-col
-         justify-center
-        md:mr-auto
- max-w-[800px]
+        md:w-[45vw] justify-center
+        
+        
         md:mt-[-4rem]
         items-center  md
         md:items-start  py-4">
@@ -137,10 +135,9 @@ animate={{
 
 
           <FadeInFromLeftText
-          className=" p-6 font-semibold 
-          bg-opacity-[0.4]
-         rounded-2xl 
-         w-[50vw] mr-auto 
+          className="mx-auto p-6 font-semibold 
+         bg-grway-100 bg-opacity-[0.4]
+         rounded-2xl
           text-xl relative z-[2]
           "
           text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime id nostrum sit deleniti dolores. Libero sed laborum exercitationem et porro veniam necessitatibus voluptatum autem a!"
@@ -152,18 +149,9 @@ animate={{
       
             </section>
          <motion.div
-             initial={{y:30,
-            opacity:0}}
-            animate={{
-              opacity:startFullBody ? 1 : 0,
-              y:startFullBody ? 0 : 30,
-            }}
-          onAnimationComplete={handleStartFadeIn}
-  className="md:absolute md:bottom-0 md:right-[0%] 
-  z-[3] mt-auto h-[80vh] w-[50vw]
-  max-w-[535px]
-  flex flex-col justify-end"
-
+  className="absolute bottom-0 right-[] 
+  z-[3] mt-auto h-[80vh] w-[50vw]  flex flex-col justify-end"
+  onAnimationComplete={handleStartFadeIn}
 >
   <Image
     src={tom}
