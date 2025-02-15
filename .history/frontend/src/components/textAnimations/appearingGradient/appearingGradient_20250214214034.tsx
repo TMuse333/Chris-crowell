@@ -71,7 +71,7 @@ const {isMobile} = useGeneralContext()
                     id={`${text}-line`}
                     className={`w-[0vw] mx-auto absolute z-[3]
                     top-0
-                    h-[0px] transition-all bg-[#00bfff]
+                    h-[0px] transition-all bright-gradient-bg
                     shadow-lg shadow-[#f5e4d4] max-w-[1200px]
                     rounded-b-full left-1/2 -translate-x-1/2 `}
                     style={{
@@ -117,9 +117,9 @@ const {isMobile} = useGeneralContext()
     }}
     whileInView={{
         backgroundImage: [
-             "linear-gradient(to right, #00e0ff, #00a2e4, #00e0ff)", // Default colors
-                                  "linear-gradient(to right, #33e8ff, #33b5d6, #33e8ff)", // Brighter colors
-                                  "linear-gradient(to right, #00e0ff, #00a2e4, #00e0ff)", // Back to default
+            "linear-gradient(to right, #6b5b45, #c9ae9e, #6b5b45)", // Default colors (main color as the base)
+            "linear-gradient(to right, #6b5b45, #6b5b45, #6b5b45)", // Brighter variant
+            "linear-gradient(to right,#6b5b45, #b99c8f, #6b5b45)"  // Slightly darker and more muted variant
           ]
           
           ,

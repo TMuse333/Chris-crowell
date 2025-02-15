@@ -22,14 +22,13 @@ const VerticalImageTextBox:React.FC<Props> = ({
     const [scope, scopeAnimate] = useAnimate();
   
     const COLORS = [
-        "#00e0ff", // Vibrant cyan blue (base)
-        "#00a2e4", // Deep sky blue (base)
-        "#0090cc", // Slightly darker blue
-        "#0080b3", // Muted ocean blue
-        "#4fd3f7", // Soft light blue
-        "#87e8ff", // Pastel sky blue
-      ];
-      
+      "#ddbeab", // Main color (base)
+      "#d0b29a", // Slightly darker shade
+      "#f0d0a9", // Slightly lighter shade
+      "#c6a37d", // Muted darker shade
+      "#e1b686", // Warm variation closer to gold
+      "#f4e3c3"  // Light pastel shade for accents
+    ];
     
     
     
@@ -159,9 +158,7 @@ const VerticalImageTextBox:React.FC<Props> = ({
         <section id='closing-paragraph'
         className="flex flex-col justify-center md:text-lg px-4 relative z-[4] mb-8
         opacity-0 items-center">
-   <motion.p
-   
-   >{description}</motion.p>
+   <p>{description}</p>
   
   
   

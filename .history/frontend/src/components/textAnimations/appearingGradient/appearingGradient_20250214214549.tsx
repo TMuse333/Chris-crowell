@@ -117,9 +117,9 @@ const {isMobile} = useGeneralContext()
     }}
     whileInView={{
         backgroundImage: [
-             "linear-gradient(to right, #00e0ff, #00a2e4, #00e0ff)", // Default colors
-                                  "linear-gradient(to right, #33e8ff, #33b5d6, #33e8ff)", // Brighter colors
-                                  "linear-gradient(to right, #00e0ff, #00a2e4, #00e0ff)", // Back to default
+           //   "linear-gradient(to right, #00e0ff, #00a2e4, #00e0ff)", // Default colors
+                                //   "linear-gradient(to right, #33e8ff, #33b5d6, #33e8ff)", // Brighter colors
+                                //   "linear-gradient(to right, #00e0ff, #00a2e4, #00e0ff)", // Back to default
           ]
           
           ,

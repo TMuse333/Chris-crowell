@@ -160,7 +160,13 @@ const VerticalImageTextBox:React.FC<Props> = ({
         className="flex flex-col justify-center md:text-lg px-4 relative z-[4] mb-8
         opacity-0 items-center">
    <motion.p
-   
+   initial={{
+    opacity:0,
+    y:30
+   }}
+   animate={{
+    opacity:
+   }}
    >{description}</motion.p>
   
   

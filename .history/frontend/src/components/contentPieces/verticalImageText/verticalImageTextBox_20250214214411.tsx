@@ -159,9 +159,7 @@ const VerticalImageTextBox:React.FC<Props> = ({
         <section id='closing-paragraph'
         className="flex flex-col justify-center md:text-lg px-4 relative z-[4] mb-8
         opacity-0 items-center">
-   <motion.p
-   
-   >{description}</motion.p>
+   <motion.p>{description}</motion.p>
   
   
   
