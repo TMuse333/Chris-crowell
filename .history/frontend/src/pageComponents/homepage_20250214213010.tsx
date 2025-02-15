@@ -113,7 +113,7 @@ const Homepage = () => {
                {/* CONTENT PIECES */}
 
                <VerticalImageTextBox
-               {...closingStatement}/>
+               />
         </main>
     )
 }

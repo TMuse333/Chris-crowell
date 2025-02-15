@@ -52,7 +52,7 @@ export const lorem60 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit
         "As a proud member of RE/MAX Nova, I focus on delivering results while building lasting relationships. My mission is to provide expert advice, innovative strategies, and clear communication every step of the way."+
 
         "Let’s navigate the Halifax real estate market together—whether you're looking for a cozy home in Sackville, a vibrant condo in Downtown Halifax, or a rental property to build your investment portfolio."
-        ,
+        
   
     aspects: [
         'Lorem Ipsum Treatments',
@@ -60,7 +60,7 @@ export const lorem60 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit
         'Seamless & Effortless Booking',
         'Personalized Consectetur Experience',
     ],
-    link: '/contact',
+    link: '',
     reverse: false,
     aspectHeader: 'Why Choose Lorem Ipsum?',
   };
@@ -82,46 +82,45 @@ export const lorem60 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit
    
 // }
   
-export const testimonialsData = {
-  title: "What Clients Say About Chris",
-  description: "Discover how Chris has helped homeowners buy and sell properties with ease, providing expert guidance and outstanding results.",
-  bgImage: false,
-  images: [
-      {
+  export const testimonialsData = {
+    title: "What Clients Say About Chris",
+    description: "Discover how Chris has helped homeowners buy and sell properties with ease, providing expert guidance and outstanding results.",
+    bgImage: false,
+    images: [
+        {
+            src: "/client.png",
+            alt: "John and Emily's Success Story",
+            title: "Buying Our Dream Home: How Chris Made the Process Stress-Free and Exciting",
+            description: "John and Emily found their perfect home with Chris' expert guidance. His knowledge, patience, and negotiation skills made their first-time homebuying experience smooth and enjoyable.",
+            link: "",
+            date: "2024-01-15"
+        },
+        {
           src: "/client.png",
-          alt: "John and Emily's Success Story",
-          title: "Chris Made Buying Our Home Easy",
-          description: "“Chris was incredibly patient and guided us through every step of buying our first home. We couldn’t have done it without him!” – John & Emily",
-          link: "",
-          date: "2024-01-15"
-      },
-      {
+            alt: "Sandra's Home Sale Story",
+            title: "Selling Fast and Above Asking: How Chris Helped Me Maximize My Home’s Value",
+            description: "Sandra needed to sell her home quickly. With Chris' strategic marketing and pricing expertise, she received multiple offers and sold above asking price within days.",
+            link: "",
+            date: "2023-11-28"
+        },
+        {
           src: "/client.png",
-          alt: "Sandra's Home Sale Story",
-          title: "Sold My Home Above Asking",
-          description: "“Chris handled everything and got my house sold fast. His pricing strategy and marketing brought in multiple offers!” – Sandra",
-          link: "",
-          date: "2023-11-28"
-      },
-      {
+            alt: "Mike and Linda's Investment Success",
+            title: "Investing with Confidence: How Chris Helped Us Build Our Real Estate Portfolio",
+            description: "Mike and Linda wanted to start investing in real estate. Chris guided them through smart property selections, helping them secure high-value investments with great returns.",
+            link: "",
+            date: "2024-02-05"
+        },
+        {
           src: "/client.png",
-          alt: "Mike and Linda's Investment Success",
-          title: "Helped Us Build Our Investment Portfolio",
-          description: "“Chris helped us find the perfect investment properties. His market knowledge and negotiation skills were invaluable.” – Mike & Linda",
-          link: "",
-          date: "2024-02-05"
-      },
-      {
-          src: "/client.png",
-          alt: "Daniel’s Relocation Story",
-          title: "Found My Dream Home in Halifax",
-          description: "“Moving to a new city was stressful, but Chris made finding a home effortless. I’m so grateful for his expertise!” – Daniel",
-          link: "",
-          date: "2023-12-10"
-      }
-  ]
+            alt: "Daniel’s Relocation Story",
+            title: "Relocating Made Easy: How Chris Helped Me Find the Perfect Home in Halifax",
+            description: "Daniel relocated to Halifax for work and was overwhelmed by the housing market. Chris' local expertise and dedication made the transition seamless and stress-free.",
+            link: "",
+            date: "2023-12-10"
+        }
+    ]
 };
-
 
 
 
@@ -174,19 +173,9 @@ export const testimonialsData = {
 };
 
 
-export const closingStatement = {
-  title: "Transform Your Well-Being Today",
-  description: `Whether you’re buying your first home, upgrading to a dream property, or selling to start a new chapter, I’m here to make the process simple and stress-free. With deep roots in Halifax and over a decade of sales and marketing experience, I combine local market knowledge with personalized service to help you reach your real estate goals.
 
-  As a proud member of RE/MAX Nova, I focus on delivering results while building lasting relationships. My mission is to provide expert advice, innovative strategies, and clear communication every step of the way.
-  
-  Let’s navigate the Halifax real estate market together—whether you're looking for a cozy home in Sackville, a vibrant condo in Downtown Halifax, or a rental property to build your investment portfolio.
-  
-  Ready to get started? I’d love to hear your story and help you take the next step.`,
-  buttonText: "Book Your Appointment Now",
-  buttonDestination: "/contact",
-};
 
+  
   
   
   

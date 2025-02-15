@@ -71,8 +71,8 @@ const FullBodyHero = () => {
         <section className="flex flex-col
          justify-center
         md:mr-auto
- max-w-[800px] 
-   
+ max-w-[800px]
+        md:mt-[-4rem]
         items-center  md
         md:items-start  py-4">
 
@@ -80,7 +80,6 @@ const FullBodyHero = () => {
           src={network}
           alt="logo"
           className="w-[70vw] max-w-[800px] mx-auto z-[2]
-          mb-[-4rem] mt-[-2rem]
           md:self-start md:mr-auto md:ml-12 object-contain"
           />
              <motion.h2
@@ -155,7 +154,7 @@ animate={{
           className=" p-6 font-semibold 
           bg-opacity-[0.4]
          rounded-2xl 
-         md:w-[50vw] mr-auto 
+         w-[50vw] mr-auto 
           text-xl relative z-[2]
           "
           text="Whether you’re buying your first home, upgrading to a dream property, or selling to start a new chapter, I’m here to make the process simple and stress-free. With deep roots in Halifax and over a decade of sales and marketing experience, I combine local market knowledge with personalized service to help you reach your real estate goals.
@@ -181,7 +180,7 @@ animate={{
           onAnimationComplete={handleStartFadeIn}
   className="md:absolute md:bottom-0 md:right-[0%] 
   z-[3] mt-auto h-[80vh] w-[50vw]
-  max-w-[535px] hidden md:flex
+  max-w-[535px]
   flex flex-col justify-end"
 
 >
@@ -190,7 +189,7 @@ animate={{
     height={600}
     width={1300}
     alt="A full body image of Thomas Musial"
-    className="hidden  md:block md:w-[55vw] rounded-2xl max-w-[535px] object-contain mx-auto bg-gray-300 bg-transparent h-auto relative z-[3] mt-auto"
+    className="w-[98vw] md:w-[55vw] rounded-2xl max-w-[535px] object-contain mx-auto bg-gray-300 bg-transparent h-auto relative z-[3] mt-auto"
   />
 </motion.div>
 

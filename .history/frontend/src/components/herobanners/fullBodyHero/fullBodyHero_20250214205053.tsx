@@ -71,8 +71,8 @@ const FullBodyHero = () => {
         <section className="flex flex-col
          justify-center
         md:mr-auto
- max-w-[800px] 
-   
+ max-w-[800px] pb-4
+        md:mt-[-6rem]
         items-center  md
         md:items-start  py-4">
 
@@ -80,7 +80,6 @@ const FullBodyHero = () => {
           src={network}
           alt="logo"
           className="w-[70vw] max-w-[800px] mx-auto z-[2]
-          mb-[-4rem] mt-[-2rem]
           md:self-start md:mr-auto md:ml-12 object-contain"
           />
              <motion.h2

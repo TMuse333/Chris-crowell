@@ -176,17 +176,13 @@ export const testimonialsData = {
 
 export const closingStatement = {
   title: "Transform Your Well-Being Today",
-  description: `Whether you’re buying your first home, upgrading to a dream property, or selling to start a new chapter, I’m here to make the process simple and stress-free. With deep roots in Halifax and over a decade of sales and marketing experience, I combine local market knowledge with personalized service to help you reach your real estate goals.
-
-  As a proud member of RE/MAX Nova, I focus on delivering results while building lasting relationships. My mission is to provide expert advice, innovative strategies, and clear communication every step of the way.
-  
-  Let’s navigate the Halifax real estate market together—whether you're looking for a cozy home in Sackville, a vibrant condo in Downtown Halifax, or a rental property to build your investment portfolio.
-  
-  Ready to get started? I’d love to hear your story and help you take the next step.`,
+  description: "Youth Bar is more than just a Botox and aesthetics clinic—it’s a space where confidence, beauty, and wellness come together. Our mission is to provide the people of Halifax with expert-led, high-quality, and personalized aesthetic treatments in a welcoming and professional environment. By offering industry-leading Botox, dermal fillers, hydration therapy, and skincare solutions, we help our clients feel refreshed, rejuvenated, and empowered at every stage of life. As Halifax continues to grow, Youth Bar will set the standard for safe, effective, and natural-looking results—helping our community put their best face forward with treatments they can trust.",
   buttonText: "Book Your Appointment Now",
   buttonDestination: "/contact",
 };
 
+
+  
   
   
   

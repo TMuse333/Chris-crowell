@@ -1,7 +1,7 @@
 import CarouselHero from "@/components/herobanners/carouselHero/carouselHero";
 import FullBodyHero from "@/components/herobanners/fullBodyHero/fullBodyHero";
 import React from "react";
-import { carouselHeroData, closingStatement, experienceCardData, imageTextBoxData,imageTextBoxData2, lorem60, parallaxTextContentData, textAndListData } from "@/data/homepageData";
+import { carouselHeroData, experienceCardData, imageTextBoxData,imageTextBoxData2, lorem60, parallaxTextContentData, textAndListData } from "@/data/homepageData";
 import Herobanner from "@/components/herobanners/herobanner2/herobanner2";
 import DiagonalClipContainer from "@/components/diagonalClip/diagonalClip";
 import ScrollWords from "@/components/textAnimations/scrollWords/scrollWords";
@@ -23,14 +23,13 @@ import FadeInFromLeftText from "@/components/textAnimations/fadeInFromLeftText/f
 import ScrollCarousel from "@/components/carousels/scrollCarousel/scrollCarousel";
 import { testimonialsData } from "@/data/homepageData";
 import Testimonials from "@/components/contentPieces/testimonials/testimonials";
-import VerticalImageTextBox from "@/components/contentPieces/verticalImageText/verticalImageTextBox";
 const Homepage = () => {
 
     
 
     return (
         <main className="w-screen bg-gradient-to-tr from-blue-200 to-blue-100
-   ">
+        overflow-x-hidden">
            
            {/* HEROBANNERS */}
 
@@ -111,9 +110,6 @@ const Homepage = () => {
                 />
 
                {/* CONTENT PIECES */}
-
-               <VerticalImageTextBox
-               {...closingStatement}/>
         </main>
     )
 }

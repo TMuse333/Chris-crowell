@@ -100,14 +100,6 @@ const ScrollCarousel: React.FC<Props> = ({ title, description, images,
           height={55}
           sizes="(max-width: 768px) 85vw, (max-width: 1200px) 50vw, 500px"
         />
-            <h5
-          className="my-4 text-center px-2 relative font-semibold bg-gradient-to-b from-black to-gray-800 
-          bg-clip-text text-transparent text-xl sm:text-2xl md:text-3xl"
-        >
-          {image.title}
-        </h5>
-
-        {image.date && <span className="text-black px-2">{image.date}</span>}
 
         <p
           className="mt-4 text-center px-4 sm:text-lg md:text-2xl"

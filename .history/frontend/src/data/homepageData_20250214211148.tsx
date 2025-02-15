@@ -187,6 +187,8 @@ export const closingStatement = {
   buttonDestination: "/contact",
 };
 
+
+  
   
   
   

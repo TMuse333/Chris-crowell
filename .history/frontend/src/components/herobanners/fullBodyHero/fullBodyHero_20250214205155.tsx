@@ -80,7 +80,7 @@ const FullBodyHero = () => {
           src={network}
           alt="logo"
           className="w-[70vw] max-w-[800px] mx-auto z-[2]
-          mb-[-4rem] mt-[-2rem]
+          mb-[-3rem]
           md:self-start md:mr-auto md:ml-12 object-contain"
           />
              <motion.h2

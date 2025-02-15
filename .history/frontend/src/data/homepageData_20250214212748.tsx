@@ -187,6 +187,80 @@ export const closingStatement = {
   buttonDestination: "/contact",
 };
 
+import React, { useEffect, useState } from "react";
+import { useAnimate, motion, useMotionValue, useMotionTemplate,
+useInView, animate } from 'framer-motion';
+import Image from "next/image";
+import brain from '../../../../public/logo.webp';
+import Link from 'next/link'
+import AppearingGradient from "@/components/textAnimations/appearingGradient/appearingGradient";
+import { useGeneralContext } from "@/context/context";
+
+import bgImage from '../../../../public/skyline.webp'
   
   
   
+{/* <AppearingGradient
+text={title}
+subText=""
+noBottom
+/>
+
+
+
+{/* Optional image */}
+<Image
+src={brain}
+alt="brain"
+className="w-[40vw] object-contain mx-auto relative z-[4]
+max-w-[420px] max-h-[280px] mt-[-3rem] mb-4
+"
+/>
+
+{/* Call to action section */}
+<section id='closing-paragraph'
+className="flex flex-col justify-center md:text-lg px-4 relative z-[4] mb-8
+opacity-0 items-center">
+<motion.p
+className="mx-auto px-4 text-pre-line
+whitespace-pre-line text-white"
+initial={{
+    opacity:0,
+    y:30
+}}
+animate={{
+    opacity:inView ? 1 : 0 ,
+    y:inView ? 0 : 30
+}}
+onAnimationComplete={()=>setAnimationComplete(true)}
+>   
+{description}
+</motion.p>
+
+
+
+
+<Link
+href={buttonDestination}>
+<motion.button id='closing-button'
+style={{
+    backgroundImage
+}}
+initial={{
+  opacity:0,
+  y:-15
+}}
+animate={{
+  opacity:animationComplete ? 1 : 0,
+  y:animationComplete ? 0 : -15
+}}
+whileHover={{
+    scale:1.05
+}}
+ className="mx-auto mt-8 opacity-0 px-6 py-3 bg-blue-500 text-white rounded-full
+ shadow-lg shadow-all-around
+ ">
+  {buttonText}
+</motion.button>
+</Link>
+</section> */}

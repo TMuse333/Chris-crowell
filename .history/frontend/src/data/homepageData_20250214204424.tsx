@@ -174,19 +174,9 @@ export const testimonialsData = {
 };
 
 
-export const closingStatement = {
-  title: "Transform Your Well-Being Today",
-  description: `Whether you’re buying your first home, upgrading to a dream property, or selling to start a new chapter, I’m here to make the process simple and stress-free. With deep roots in Halifax and over a decade of sales and marketing experience, I combine local market knowledge with personalized service to help you reach your real estate goals.
 
-  As a proud member of RE/MAX Nova, I focus on delivering results while building lasting relationships. My mission is to provide expert advice, innovative strategies, and clear communication every step of the way.
-  
-  Let’s navigate the Halifax real estate market together—whether you're looking for a cozy home in Sackville, a vibrant condo in Downtown Halifax, or a rental property to build your investment portfolio.
-  
-  Ready to get started? I’d love to hear your story and help you take the next step.`,
-  buttonText: "Book Your Appointment Now",
-  buttonDestination: "/contact",
-};
 
+  
   
   
   
