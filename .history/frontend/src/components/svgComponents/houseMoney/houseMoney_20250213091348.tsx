@@ -1,1 +1,0 @@
-import DollarSignSvg from "../sellHouse/dollarSignSvg";

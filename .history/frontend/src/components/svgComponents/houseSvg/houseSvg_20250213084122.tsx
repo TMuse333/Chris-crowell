@@ -1,2 +1,0 @@
-
-import {houseSvg} from '@data/homepageData'
