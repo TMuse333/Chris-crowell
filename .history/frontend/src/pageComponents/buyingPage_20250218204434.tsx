@@ -1,0 +1,76 @@
+"use client"
+
+import SlideShowCarousel from "@/components/carousels/slideshowCarousel/slideShowCarousel";
+import ImageTextBox from "@/components/contentPieces/ImageTextBox/imageTextBox";
+import StepByStep from "@/components/contentPieces/stepByStep/stepByStep";
+import VerticalImageTextBox from "@/components/contentPieces/verticalImageText/verticalImageTextBox";
+import Footer2 from "@/components/footer/footer";
+import CarouselHero from "@/components/herobanners/carouselHero/carouselHero";
+import ServiceHerobanner from "@/components/herobanners/serviceHerobanner/serviceHerobanner";
+import BigNav from "@/components/navBars/bigNav/bigNav";
+import HouseMoney from "@/components/svgComponents/houseMoney/houseMoney";
+import TextAndList from "@/components/textAndList/textAndList";
+import Accordion from "@/components/textComponents/accordion/accordion";
+import { carouselHeroData} from "@/data/homepageData";
+import { buyingHerobanner, realEstateSteps, slideShowBuyingData, documentsData,
+    buyingQuestions, 
+    buyingCloser,
+    buyingIntro} from "@/data/buyingData";
+import React from "react";
+
+
+const BuyingPage = () => {
+
+
+    return (
+        <main className="w-screen overflow-x-hidden
+        bg-gradient-to-tr from-blue-200 to-blue-100">
+
+            <BigNav
+            excludedLink="Buy a home"
+            />
+
+            <ServiceHerobanner
+            {...buyingHerobanner}
+            alt='alt'
+            />
+
+            {/* <CarouselHero
+            {...carouselHeroData}
+            /> */}
+            <ImageTextBox
+            {...buyingIntro}
+            customImage={<HouseMoney/>}
+            />
+
+            {/* <StepByStep
+            steps={realEstateSteps}
+            /> */}
+
+            <SlideShowCarousel
+            images={slideShowBuyingData}
+            />
+
+            <TextAndList
+            {...documentsData}
+            />
+
+            <Accordion
+            hasIntro={false}
+            text={buyingQuestions}
+            />
+
+            <VerticalImageTextBox
+            {...buyingCloser}
+            />
+
+            <Footer2
+            excludedLink="Buy a home"
+            />
+
+
+        </main>
+    )
+}
+
+export default BuyingPage
