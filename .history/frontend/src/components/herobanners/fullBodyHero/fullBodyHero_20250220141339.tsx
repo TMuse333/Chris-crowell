@@ -54,11 +54,6 @@ const FullBodyHero = () => {
         className="w-full h-full
         absolute object-cover
         z-[1]"
-        width={600}
-        height={1300}
-        priority
-        alt="chris your network realtor"
-        />
        {/* <video
         className="w-full h-full
         absolute object-cover
@@ -203,7 +198,6 @@ flex-col-reverse md:flex-col">
 
 >
   <Image
-  priority
     src={tom}
     height={600}
     width={1300}

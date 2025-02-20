@@ -203,7 +203,6 @@ flex-col-reverse md:flex-col">
 
 >
   <Image
-  priority
     src={tom}
     height={600}
     width={1300}

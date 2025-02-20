@@ -5,7 +5,7 @@ import React, {  useState } from "react";
 // import tom from '../../../public/thomas-full-body-1-nogb.png'
 // import full from '../../../public/smile-tom.png'
 
-import tom from '../../../../public/chris-hd-min.webp'
+import tom from '../../../../public/chris-hd.png'
 // import head from '../../../../public/placeholder.png'
 import { TypeWriter } from "@/components/textAnimations/typeWriter/typeWriter";
 import DiagonalClipContainer from "@/components/diagonalClip/diagonalClip";
@@ -16,7 +16,6 @@ import { motion } from "framer-motion";
 // import { start } from "repl";
 // import logo from '../../../../public/remax-ballon.webp'
 import network from '../../../../public/logo.webp'
-import skyline from '../../../../public/skyline.webp'
 // import { skyline } from "@/data/homepageData";
 
 const FullBodyHero = () => {
@@ -49,16 +48,6 @@ const FullBodyHero = () => {
     //     background: 'radial-gradient(circle, #00bfff -150%, rgba(0, 191, 255, 0%) 80%)'
     //   }}
       >
-        <Image
-        src={skyline}
-        className="w-full h-full
-        absolute object-cover
-        z-[1]"
-        width={600}
-        height={1300}
-        priority
-        alt="chris your network realtor"
-        />
        {/* <video
         className="w-full h-full
         absolute object-cover
@@ -203,7 +192,6 @@ flex-col-reverse md:flex-col">
 
 >
   <Image
-  priority
     src={tom}
     height={600}
     width={1300}

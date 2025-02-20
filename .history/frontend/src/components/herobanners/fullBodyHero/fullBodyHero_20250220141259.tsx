@@ -16,7 +16,6 @@ import { motion } from "framer-motion";
 // import { start } from "repl";
 // import logo from '../../../../public/remax-ballon.webp'
 import network from '../../../../public/logo.webp'
-import skyline from '../../../../public/skyline.webp'
 // import { skyline } from "@/data/homepageData";
 
 const FullBodyHero = () => {
@@ -50,15 +49,7 @@ const FullBodyHero = () => {
     //   }}
       >
         <Image
-        src={skyline}
-        className="w-full h-full
-        absolute object-cover
-        z-[1]"
-        width={600}
-        height={1300}
-        priority
-        alt="chris your network realtor"
-        />
+        src={tom}
        {/* <video
         className="w-full h-full
         absolute object-cover
@@ -203,7 +194,6 @@ flex-col-reverse md:flex-col">
 
 >
   <Image
-  priority
     src={tom}
     height={600}
     width={1300}
