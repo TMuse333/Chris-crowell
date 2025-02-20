@@ -2,6 +2,8 @@
 import Image from "next/image";
 // import Link from "next/link";
 import React, {  useState } from "react";
+// import tom from '../../../public/thomas-full-body-1-nogb.png'
+// import full from '../../../public/smile-tom.png'
 
 import tom from '../../../../public/chris-hd-min.webp'
 // import head from '../../../../public/placeholder.png'

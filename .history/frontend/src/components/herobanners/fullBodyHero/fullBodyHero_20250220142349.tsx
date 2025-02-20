@@ -2,6 +2,8 @@
 import Image from "next/image";
 // import Link from "next/link";
 import React, {  useState } from "react";
+// import tom from '../../../public/thomas-full-body-1-nogb.png'
+// import full from '../../../public/smile-tom.png'
 
 import tom from '../../../../public/chris-hd-min.webp'
 // import head from '../../../../public/placeholder.png'
@@ -35,7 +37,7 @@ const FullBodyHero = () => {
 
   }
     return (
-
+// bg-gradient-to-tr from-blue-200 to-blue-100
         
        <header className="
        md:min-h-screen relative items-center 
@@ -43,7 +45,9 @@ const FullBodyHero = () => {
       max-w-[1200px] text-white
       overflow-x-hidden
        relative z-[3] "
-  
+    //    style={{
+    //     background: 'radial-gradient(circle, #00bfff -150%, rgba(0, 191, 255, 0%) 80%)'
+    //   }}
       >
         <Image
         src={skyline}
