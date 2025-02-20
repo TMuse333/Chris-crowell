@@ -43,7 +43,7 @@ const Homepage = () => {
 
       <TextParallaxContentExample {...parallaxTextContentData} link="/podcast" />
 
-      <section className="overflow-x-hidden bg-gradient-to-tr from-blue-200 to-blue-100">
+      <section className="overflow-x-hidden">
         <VerticalImageTextBox {...closingStatement} />
         <Footer2 excludedLink="Home" />
       </section>
