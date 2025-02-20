@@ -14,7 +14,7 @@ import {
 const FullBodyHero = dynamic(() => import("@/components/herobanners/fullBodyHero/fullBodyHero"));
 const ExperienceCard = dynamic(() => import("@/components/contentPieces/experienceCard/experienceCard"));
 const ImageTextBox = dynamic(() => import("@/components/contentPieces/ImageTextBox/imageTextBox"));
-import { TextParallaxContentExample } from "@/components/contentPieces/parallaxText/parallaxText";
+const TextParallaxContentExample = dynamic(() => import("@/components/contentPieces/parallaxText/parallaxText").then(mod => mod.TextParallaxContentExample));
 const TextAndList = dynamic(() => import("@/components/textAndList/textAndList"));
 const HouseMoney = dynamic(() => import("@/components/svgComponents/houseMoney/houseMoney"));
 const VerticalImageTextBox = dynamic(() => import("@/components/contentPieces/verticalImageText/verticalImageTextBox"));
