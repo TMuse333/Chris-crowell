@@ -158,8 +158,10 @@ const VerticalImageTextBox:React.FC<Props> = ({
   
         {/* Call to action section */}
         <motion.section 
-      
-
+        animate={{
+          opacity: inView ? 1 : 0,
+          y: inView ? 0 : -33
+        }}
         id='closing-paragraph'
         className="flex flex-col justify-center md:text-lg px-4 relative z-[4] mb-8
         items-center whitespace-pre-line">
@@ -180,7 +182,7 @@ const VerticalImageTextBox:React.FC<Props> = ({
           whileHover={{
               scale:1.05
           }}
-           className="mx-auto mt-8  px-6 py-3 bg-blue-500 text-white rounded-full
+           className="mx-auto mt-8 opacity-0 px-6 py-3 bg-blue-500 text-white rounded-full
            shadow-lg shadow-all-around
            ">
             {buttonText}

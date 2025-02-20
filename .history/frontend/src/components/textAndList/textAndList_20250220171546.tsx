@@ -5,7 +5,6 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 import {motion, useInView} from 'framer-motion'
 import { useGeneralContext } from "@/context/context";
 import Image from "next/image";
-import Link from "next/link";
 
 interface ListAspects {
   
@@ -102,7 +101,7 @@ interface Props {
     src?:string,
     alt?:string,
     description:string,
-    link?:string,
+    link
     listAspects:{
         src:string,
         alt:string,
@@ -115,7 +114,7 @@ interface Props {
 const TextAndList:React.FC<Props> = ({
     title,description,
     listAspects,subTitle,
-    src,alt,link
+    src,alt
 }) => {
 
 
@@ -177,19 +176,10 @@ const TextAndList:React.FC<Props> = ({
             )}
             <p className="text-black
             md:text-left">{description}</p>
-            {link && (
-<>
-              <Link
-              href={link}>
-
-              
             <button className="p-3 rounded-2xl
             bg-[#00bfff] text-black">
-                Contact
+                click the button
             </button>
-            </Link>
-            </>
-                       )}
           </section>
     
           {/* Accordion Section */}

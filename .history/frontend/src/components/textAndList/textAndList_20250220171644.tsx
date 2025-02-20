@@ -178,7 +178,7 @@ const TextAndList:React.FC<Props> = ({
             <p className="text-black
             md:text-left">{description}</p>
             {link && (
-<>
+<></>
               <Link
               href={link}>
 
@@ -188,7 +188,6 @@ const TextAndList:React.FC<Props> = ({
                 Contact
             </button>
             </Link>
-            </>
                        )}
           </section>
     

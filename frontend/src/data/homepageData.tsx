@@ -26,8 +26,8 @@ export const lorem60 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit
   
     reverse: false, // Optional: You can set it to true if needed to adjust the layout
     title: 'Lorem Ipsum Team',
-    buttonLink: '/about', // Link to the About page
-    buttonText: 'Learn More'
+    buttonLink: '/selling-your-home', // Link to the About page
+    buttonText: 'Sell my home'
   };
   
 
@@ -39,7 +39,7 @@ export const lorem60 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit
   
     reverse: false, // Optional: You can set it to true if needed to adjust the layout
     title: 'Find a home',
-    buttonLink: '/about', // Link to the About page
+    buttonLink: '/buy-home', // Link to the About page
     buttonText: 'Learn More'
   };
 

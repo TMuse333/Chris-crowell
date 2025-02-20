@@ -188,7 +188,6 @@ const TextAndList:React.FC<Props> = ({
                 Contact
             </button>
             </Link>
-            </>
                        )}
           </section>
     

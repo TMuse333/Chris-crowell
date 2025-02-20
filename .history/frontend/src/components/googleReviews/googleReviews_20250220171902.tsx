@@ -100,7 +100,6 @@ bg-[#00bfff] p-2 mt-2
 ">
     See all reviews
 </button>
-</a>
   </motion.p>
 
 

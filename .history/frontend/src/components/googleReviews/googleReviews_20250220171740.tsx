@@ -91,16 +91,13 @@ text-3xl sm:text-4xl font-semibold text-center relative transition-colors"
   >
 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi soluta molestiae earum maxime aliquam assumenda, animi possimus ut optio atque! Odio omnis nisi possimus fugit!
 <br/>
-<a
-href="https://maps.app.goo.gl/inmxCYTTLWD8aCTo7">
-
+<Link
 
 <button className="rounded-2xl
 bg-[#00bfff] p-2 mt-2
 ">
     See all reviews
 </button>
-</a>
   </motion.p>
 
 

@@ -93,14 +93,13 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi soluta molest
 <br/>
 <a
 href="https://maps.app.goo.gl/inmxCYTTLWD8aCTo7">
-
-
+    
+</a>
 <button className="rounded-2xl
 bg-[#00bfff] p-2 mt-2
 ">
     See all reviews
 </button>
-</a>
   </motion.p>
 
 
