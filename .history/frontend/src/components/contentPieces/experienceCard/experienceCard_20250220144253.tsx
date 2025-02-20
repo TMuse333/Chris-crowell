@@ -7,7 +7,7 @@ import { useGeneralContext } from "@/context/context";
 
 import { easeIn} from 'framer-motion/dom'
 import Link from "next/link";
-// import TypeAlongText from "@/components/textAnimations/typeAlongText/typeAlongText";
+import TypeAlongText from "@/components/textAnimations/typeAlongText/typeAlongText";
 
 
 
@@ -74,19 +74,20 @@ const ExperienceCard: React.FC<Props> = ({
     // const headerRef = useRef(null);
     const imageRef = useRef(null);
     const descriptionRef = useRef(null);
-
+const headerRef = useRef(null)
     
     const handleAnimation = async () => {
         
-        
+        const header = headerRef.current
   const image = imageRef.current;
   const description = descriptionRef.current;
     
       if (  image && description
-        && h2AnimationComplete) {
+        && header) {
    
 
-
+            animate(header, { opacity: 1 }, { ease: 'easeInOut',
+            delay:0 })
           animate(image, { opacity: 1 }, { ease: 'easeInOut',
         delay:0.2 })
           animate(description, { opacity: 1 }, { ease: 'easeInOut',
@@ -138,19 +139,14 @@ const ExperienceCard: React.FC<Props> = ({
                 className="relative mx-auto w-[98vw] rounded-2xl bg-gradient-to-b from-[#0077b3] to-blue-300
               opacity-1 my-8 max-w-[1200px] overflow-x-hidden"
             >
-                <motion.h2 
-                animate={{
-                    y:startAnimation ? 0 : -30,
-                    opacity:startAnimation ? 1 : 0
-                }}
-                onAnimationComplete={()=>setH2AnimationComplete(true)}
-                // ref={headerRef}
+                <h2 
+                ref={headerRef}
                 id={`${title}-header`}
                     className="text-center w-full text-3xl sm:text-4xl  mb-6 font-bold pt-4
                     translate-y-[-2rem] opacity-0 px-3"
                 >
                     {title}
-                </motion.h2>
+                </h2>
                 {/* <TypeAlongText
                 as="h2"
                 text={title}

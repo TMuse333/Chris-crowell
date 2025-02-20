@@ -7,7 +7,7 @@ import { useGeneralContext } from "@/context/context";
 
 import { easeIn} from 'framer-motion/dom'
 import Link from "next/link";
-// import TypeAlongText from "@/components/textAnimations/typeAlongText/typeAlongText";
+import TypeAlongText from "@/components/textAnimations/typeAlongText/typeAlongText";
 
 
 
@@ -74,11 +74,11 @@ const ExperienceCard: React.FC<Props> = ({
     // const headerRef = useRef(null);
     const imageRef = useRef(null);
     const descriptionRef = useRef(null);
-
+const headerRef = useRef(null)
     
     const handleAnimation = async () => {
         
-        
+        const header = headerRef.current
   const image = imageRef.current;
   const description = descriptionRef.current;
     
@@ -139,12 +139,12 @@ const ExperienceCard: React.FC<Props> = ({
               opacity-1 my-8 max-w-[1200px] overflow-x-hidden"
             >
                 <motion.h2 
+                // ref={headerRef}
                 animate={{
-                    y:startAnimation ? 0 : -30,
-                    opacity:startAnimation ? 1 : 0
+                    opacity: startAnimation ? 1 : 0,
+                    y: startAnimation ? 0 : -30
                 }}
                 onAnimationComplete={()=>setH2AnimationComplete(true)}
-                // ref={headerRef}
                 id={`${title}-header`}
                     className="text-center w-full text-3xl sm:text-4xl  mb-6 font-bold pt-4
                     translate-y-[-2rem] opacity-0 px-3"
