@@ -46,7 +46,7 @@ const Homepage = () => {
         <GoogleReviews reviews={testimonials} />
       </section>
 
-      <ParallaxText {...parallaxTextContentData} link="/podcast" />
+      <TextParallaxContentExample {...parallaxTextContentData} link="/podcast" />
       {/* <TextParallaxContentExample {...parallaxTextContentData} link="/podcast" /> */}
 
       <section className="overflow-x-hidden bg-gradient-to-tr from-blue-200 to-blue-100">

@@ -109,7 +109,7 @@ const FullBodyHero = () => {
            text-center md:text-left">
            Chris Crowell | Real estate agent Halifax Nova Scotia
             
-            </motion.h1>
+            </motion.h2>
             
           
            <TypeAlongText

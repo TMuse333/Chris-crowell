@@ -30,8 +30,8 @@ export const podcastCountup = {
         name: "Total Views & Streams",
       },
       {
-        number: "1000+",
-        name: "Subscribers",
+        number: "",
+        name: "Listener Ratings",
       },
     ],
   };

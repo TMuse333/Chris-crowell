@@ -14,7 +14,7 @@ import {
 import FullBodyHero from "@/components/herobanners/fullBodyHero/fullBodyHero";
 const ExperienceCard = dynamic(() => import("@/components/contentPieces/experienceCard/experienceCard"));
 const ImageTextBox = dynamic(() => import("@/components/contentPieces/ImageTextBox/imageTextBox"));
-import  ParallaxText  from "@/components/contentPieces/parallaxText/parallaxText";
+import { TextParallaxContentExample } from "@/components/contentPieces/parallaxText/parallaxText";
 const TextAndList = dynamic(() => import("@/components/textAndList/textAndList"));
 const HouseMoney = dynamic(() => import("@/components/svgComponents/houseMoney/houseMoney"));
 const VerticalImageTextBox = dynamic(() => import("@/components/contentPieces/verticalImageText/verticalImageTextBox"));
@@ -46,7 +46,7 @@ const Homepage = () => {
         <GoogleReviews reviews={testimonials} />
       </section>
 
-      <ParallaxText {...parallaxTextContentData} link="/podcast" />
+      <TextParallaxContentExample {...parallaxTextContentData} link="/podcast" />
       {/* <TextParallaxContentExample {...parallaxTextContentData} link="/podcast" /> */}
 
       <section className="overflow-x-hidden bg-gradient-to-tr from-blue-200 to-blue-100">

@@ -41,7 +41,7 @@ interface VideoProps {
 
 
 
- const ParallaxText:React.FC<Props>
+ const TextParallaxContentExample:React.FC<Props>
  = ({src,alt,isVideo, description,muted,
 thumbnail,subHeading,heading,link }) => {
 
@@ -504,6 +504,4 @@ const OverlayCopy = ({
       </motion.div>
     );
   };
-
-  export default ParallaxText
   

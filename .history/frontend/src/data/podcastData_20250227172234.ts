@@ -31,7 +31,7 @@ export const podcastCountup = {
       },
       {
         number: "1000+",
-        name: "Subscribers",
+        name: "Listener Ratings",
       },
     ],
   };
