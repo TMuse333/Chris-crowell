@@ -1,0 +1,1 @@
+'linear-gradient(90deg, #00bfff, #00A7E0, #64D8FF)',
