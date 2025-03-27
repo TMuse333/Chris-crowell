@@ -35,8 +35,8 @@ export const lorem60 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit
   export const imageTextBoxData2 = {
     src: '/chris-back.webp', // Replace with your image source
     alt: 'Lorem Ipsum Team',
-    description: "Finding your dream home should be an exciting and rewarding journey, not a stressful one. With expert guidance and a deep understanding of the local market, we make the home-buying process smooth, efficient, and tailored to your needs. From securing the best deals to navigating negotiations with confidence, we ensure you’re informed every step of the way. Whether it’s your first home or your next big move, we streamline the experience, so you can focus on what matters—turning the key to a future you love. Let’s find the perfect home for you, quickly and stress-free!" 
-   ,
+    description: 'Finding your dream home should be an exciting and rewarding journey, not a stressful one. With expert guidance and a deep understanding of the local market, we make the home-buying process smooth, efficient, and tailored to your needs. From securing the best deals to navigating negotiations with confidence, we ensure you’re informed every step of the way. Whether it’s your first home or your next big move, we streamline the experience, so you can focus on what matters—turning the key to a future you love. Let’s find the perfect home for you, quickly and stress-free!' +
+   
     reverse: false, // Optional: You can set it to true if needed to adjust the layout
     title: 'Find a home',
     buttonLink: '/buy-home', // Link to the About page
