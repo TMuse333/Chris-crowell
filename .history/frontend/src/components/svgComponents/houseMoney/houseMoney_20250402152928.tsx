@@ -24,16 +24,16 @@ const HouseMoney = () => {
     return (
         <section className=" bg-gradient-to-b from-[#0077b3] to-blue-300 relative   rounded-2xl  w-[90vw] h-[60vh] md:h-[55vw] max-h-[567px] max-w-[568px] mx-auto
         relative z-[5] w-[90vw] md:w-[52vw] flex justify-center items-center
-        border border-white border-4"
+        "
         onClick={()=>setIsClicked(!isClicked)}>
 
 {/* <div className="flex w-full h-[80%] "> */}
 
-            {/* <HouseSvg
+            <HouseSvg
             isClicked={isClicked}/>
             <DollarSignSvg
              isClicked={isClicked}
-            /> */}
+            />
             {/* </div>
             <p className="text-center">slatty</p> */}
 

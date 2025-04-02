@@ -80,96 +80,62 @@ export const slideShowBuyingData = [
   
 
 
-  export const buyingDocumentsData = {
-    subTitle: "Essential Documents and Information for Buying a Home",
-    title: "Key Documents and Frequently Asked Questions in the Buying Process",
+export const buyingDocumentsData = {
+    subTitle: "Essential Documents for Buying a Home",
+    title: "Key Documents You’ll Need During the Buying Process",
     src: "/document.svg",
-    alt: "Documents and Q&A for Buying a Home",
-    description: "Navigating the home buying process involves both important documents and understanding key steps. Here are the essential documents and answers to commonly asked questions to help you feel confident during the process.",
+    alt: "Documents for Buying a Home",
+    description: "Buying a home involves important paperwork to ensure everything is in order. Here are the 4 crucial documents you’ll need to navigate the process smoothly.",
     listAspects: [
         {
             src: "/document.svg",
-            alt: "Working with a REALTOR®️ Form",
-            title: "Working with a REALTOR®️ Form",
-            description: "In Nova Scotia, this form outlines the working relationship between you and the REALTOR®️. It's one of the first steps in the process."
+            alt: "Mortgage Pre-Approval",
+            title: "Mortgage Pre-Approval",
+            description: "A document from your lender confirming your borrowing power, giving you a strong position when making an offer."
         },
         {
             src: "/document.svg",
-            alt: "Agency Agreement",
-            title: "Agency Agreement (Buyer or Seller Designated)",
-            description: "This document explains the roles and responsibilities of your REALTOR®️ and whether they represent the buyer or seller in the transaction."
+            alt: "Purchase Agreement",
+            title: "Purchase Agreement",
+            description: "A contract outlining the terms of the home purchase, including price, contingencies, and deadlines."
         },
         {
             src: "/document.svg",
-            alt: "Conditions in an Offer",
-            title: "What Are Conditions in an Offer and How Do They Protect Me?",
-            description: "Conditions give the buyer or seller time to complete necessary steps (such as inspections or securing financing). If conditions are unmet, the deal can be canceled without penalty."
+            alt: "Home Inspection Report",
+            title: "Home Inspection Report",
+            description: "A detailed evaluation of the home's condition, helping you make an informed buying decision."
         },
         {
             src: "/document.svg",
-            alt: "Offer to Purchase",
-            title: "What’s Included in an Offer to Purchase?",
-            description: "In Nova Scotia, an offer to purchase includes the purchase price, deposit, conditions, inclusions/exclusions, closing date, and signatures from all parties involved."
-        },
-        {
-            src: "/document.svg",
-            alt: "Lawyer’s Role in the Transaction",
-            title: "What’s the Role of My Lawyer in the Transaction?",
-            description: "Your real estate lawyer ensures the title is clear, coordinates the funds, registers the documents, and protects your legal interests throughout the closing process."
-        },
-        {
-            src: "/document.svg",
-            alt: "Deposit Handling",
-            title: "How Is the Deposit Handled, and Is It Refundable?",
-            description: "The deposit is held in trust by the listing brokerage and applied to the purchase at closing. If a condition isn’t met, it’s typically refunded—unless stated otherwise in the contract."
+            alt: "Closing Documents",
+            title: "Closing Documents",
+            description: "Final paperwork including loan documents, title transfer, and payment details to complete the purchase."
         }
     ]
 };
 
-
 export const buyingQuestions = [
     {
-        title: "What’s the average home price in Halifax right now?",
-        description: "Home prices in Halifax vary by area and property type, but the average price for a detached home typically ranges from $500,000–$600,000, depending on the market. I can provide up-to-date data based on your preferred neighbourhood."
+        title: "How do I know if I’m ready to buy a home?",
+        description: "You’re financially ready if you have a stable income, good credit, and savings for a down payment and closing costs."
     },
     {
-        title: "How competitive is the Halifax market? Are homes selling quickly?",
-        description: "Halifax has seen strong demand in recent years. Many homes, especially in sought-after areas, sell quickly—often in under 2 weeks and sometimes over asking. Working with an experienced REALTOR®️ helps you move fast and strategically."
+        title: "How much should I save for a down payment?",
+        description: "Typically, 5-20% of the home price is required, though some programs allow lower down payments with mortgage insurance."
     },
     {
-        title: "How much do I need for a down payment?",
-        description: "In Canada, the minimum down payment is: 5% for homes under $500,000, 5% on the first $500,000 + 10% on the remaining amount for homes between $500,000–$1,499,999, and 20% for homes over $1.5 million or to avoid mortgage insurance."
+        title: "What additional costs should I expect when buying a home?",
+        description: "Beyond the purchase price, factor in closing costs, home inspections, property taxes, and moving expenses."
     },
     {
-        title: "Do I need to get pre-approved before house hunting?",
-        description: "Yes—getting pre-approved helps you understand your budget, strengthens your offer, and speeds up the buying process."
+        title: "Should I get a home inspection before buying?",
+        description: "Yes! A home inspection helps uncover potential issues, giving you leverage to negotiate repairs or a better price."
     },
     {
-        title: "What neighbourhoods are best for families/retirees/investors?",
-        description: "Families: Sackville, Bedford, Fall River, Clayton Park, Dartmouth, Cole Harbour etc. Retirees: Chester, Dartmouth waterfront, The South End. Investors: Halifax Peninsula, North End, Spryfield, Sackville. Let me know your goals and I’ll tailor recommendations to suit your needs."
-    },
-    {
-        title: "Are there any first-time homebuyer programs or incentives in Nova Scotia?",
-        description: "Yes, including: First-Time Home Buyer Incentive (Canada-wide), Home Buyers’ Plan (HBP) – Withdraw up to $60,000 from your RRSP, and Nova Scotia First-Time Home Buyers Rebate – Reduces the deed transfer tax in some municipalities."
-    },
-    {
-        title: "What are closing costs in Nova Scotia and how much should I budget for?",
-        description: "Closing costs typically include: Deed Transfer Tax (1–1.5% of purchase price depending on municipality), Legal Fees ($1,000–$2000), Home Insurance, Property Tax Adjustments. Budget roughly 3–4% of the purchase price to be safe."
-    },
-    {
-        title: "Should I get a home inspection, and what does it cover?",
-        description: "Yes. A home inspection checks the property's structure, roof, plumbing, electrical systems, foundation, HVAC, and more—helping you avoid costly surprises."
-    },
-    {
-        title: "Can I back out of an offer after it’s accepted?",
-        description: "Yes, but only if the offer was conditional (e.g., financing or inspection) and those conditions aren't met. If the deal is firm, you could face legal or financial consequences for backing out."
-    },
-    {
-        title: "What are restrictive covenants and should I be concerned?",
-        description: "Restrictive covenants are rules on how a property can be used (e.g., no subdividing, fencing restrictions). Always review them during the offer process with your REALTOR®️ and lawyer."
+        title: "How long does it take to buy a home?",
+        description: "From mortgage pre-approval to closing, the process can take anywhere from 30 to 90 days, depending on market conditions."
     }
 ];
-
 
 export const buyingCloser = {
     title: "Ready to Buy Your Dream Home?",

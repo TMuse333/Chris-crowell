@@ -26,7 +26,7 @@ export const lorem60 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit
 
   
     reverse: false, // Optional: You can set it to true if needed to adjust the layout
-    title: 'Sell Faster. Sell Smarter. Sell for More.',
+    title: 'Stress-Free Home Selling',
     buttonLink: '/selling-your-home', // Link to the About page
     buttonText: 'Sell my home'
   };
@@ -35,10 +35,11 @@ export const lorem60 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit
   export const imageTextBoxData2 = {
     src: '/chris-back.webp', // Replace with your image source
     alt: 'Lorem Ipsum Team',
-    description: "Buying a home is one of the biggest decisions you’ll ever make, and having the right guidance makes all the difference. Whether you're a first-time buyer or an experienced investor, I’ll help you navigate the Halifax market with expert advice, local knowledge, and a stress-free approach. From finding the perfect property to negotiating the best deal, I’m here to make your home-buying experience seamless and rewarding." 
+    description: "Finding your dream home should be an exciting and rewarding journey, not a stressful one. With expert guidance and a deep understanding of the local market, we make the home-buying process smooth, efficient, and tailored to your needs. From securing the best deals to navigating negotiations with confidence, we ensure you’re informed every step of the way. Whether it’s your first home or your next big move, we streamline the experience, so you can focus on what matters—turning the key to a future you love. Let’s find the perfect home for you, quickly and stress-free!" 
    ,
     reverse: false, // Optional: You can set it to true if needed to adjust the layout
-    title: 'Find Your Dream Home with Confidence',
+    title: 'Find Your Dream Home with Confidence
+    ',
     buttonLink: '/buy-home', // Link to the About page
     buttonText: 'Learn More'
   };
@@ -144,54 +145,48 @@ export const testimonialsData = {
     src: "/chris-seated.webp",
     alt: "Chris - Your Trusted Realtor",
     description:
-      "Finding the perfect home or selling your property requires expertise, strategy, and dedication. Chris brings years of experience in the real estate market, ensuring a seamless and stress-free experience. Download Chris' free PDF guide for exclusive insights on buying and selling smarter.",
+      "Finding the perfect home or selling your property requires expertise, strategy, and dedication. Chris brings years of experience in the real estate market, ensuring a seamless and stress-free experience. Download Chris' free PDF guide for exclusive insights on buying and selling smarter.",  
     listAspects: [
-      {
-        src: "/market-expertise.jpg",
-        alt: "Market Expertise",
-        title: "Over 12 Years of Sales & Negotiation Expertise",
-        description: "With a strong background in sales, including 8.5 years at Unilever Canada, I bring top-tier negotiation skills to every real estate deal.",
-      },
-      {
-        src: "/client-focused.jpg",
-        alt: "Local Market Knowledge",
-        title: "Local Market Knowledge",
-        description: "As a Halifax-based REALTOR®️ with Remax Nova, I have an in-depth understanding of the local market, from emerging neighborhoods to prime investment opportunities.",
-      },
-      {
-        src: "/negotiation-skills.jpg",
-        alt: "Stress-Free Buying & Selling",
-        title: "Stress-Free Buying & Selling",
-        description: "Whether you’re purchasing your dream home or selling for top dollar, my goal is to simplify the process so you can focus on what matters most.",
-      },
-      {
-        src: "/free-guide.jpg",
-        alt: "Strategic Marketing & Pricing",
-        title: "Strategic Marketing & Pricing",
-        description: "I use innovative marketing, data-driven pricing strategies, and strong negotiation tactics to ensure you get the best outcome.",
-      },
-      {
-        src: "/free-guide.jpg",
-        alt: "Dedicated & Personable Service",
-        title: "Dedicated & Personable Service",
-        description: "Real estate isn’t just about transactions—it’s about people. I take pride in providing honest, client-focused service, ensuring you feel confident every step of the way.",
-      },
+        {
+            src: "/market-expertise.jpg",
+            alt: "Market Expertise",
+            title: "Unmatched Market Expertise",
+            description: "Chris understands local trends, pricing, and negotiations to get you the best deal.",
+        },
+        {
+            src: "/client-focused.jpg",
+            alt: "Client Focused",
+            title: "Client-Centered Approach",
+            description: "Your goals come first. Chris provides personalized service tailored to your needs.",
+        },
+        {
+            src: "/negotiation-skills.jpg",
+            alt: "Negotiation Icon",
+            title: "Strong Negotiator",
+            description: "Chris ensures you maximize value, whether you're buying or selling.",
+        },
+        {
+            src: "/free-guide.jpg",
+            alt: "Free PDF Guide",
+            title: "Exclusive Free Guide",
+            description: "Chris offers a free PDF with expert tips on navigating the real estate market.",
+        },
     ],
-  };
-  
+};
 
 
-  export const closingStatement = {
-    title: "Let’s Make Your Move in Halifax Real Estate",
-    description: `Whether you're buying your first home, selling your current property, or investing in Halifax real estate, you deserve a REALTOR®️ who’s deeply connected, highly experienced, and genuinely invested in your success. With over 12 years of sales and negotiation expertise, local market insight, and a people-first approach, I’m here to make your real estate journey smooth, strategic, and stress-free.
+export const closingStatement = {
+  title: "Transform Your Well-Being Today",
+  description: `Whether you’re buying your first home, upgrading to a dream property, or selling to start a new chapter, I’m here to make the process simple and stress-free. With deep roots in Halifax and over a decade of sales and marketing experience, I combine local market knowledge with personalized service to help you reach your real estate goals.
+
+  As a proud member of RE/MAX Nova, I focus on delivering results while building lasting relationships. My mission is to provide expert advice, innovative strategies, and clear communication every step of the way.
   
-    Let’s connect. I’ll answer your questions, walk you through your options, and help you make confident decisions—no pressure, just honest guidance.
+  Let’s navigate the Halifax real estate market together—whether you're looking for a cozy home in Sackville, a vibrant condo in Downtown Halifax, or a rental property to build your investment portfolio.
   
-    📲 Reach out today to book a free consultation or get started on your next move.`,
-    buttonText: "Book Your Appointment Now",
-    buttonDestination: "/contact",
-  };
-  
+  Ready to get started? I’d love to hear your story and help you take the next step.`,
+  buttonText: "Book Your Appointment Now",
+  buttonDestination: "/contact",
+};
 
 // src:string,
 // alt:string,

@@ -53,10 +53,9 @@ const Homepage = () => {
       h-[5px] max-w-[1200px] mx-auto"
       /> */}
 
-        <ImageTextBox {...imageTextBoxData2}
-          //  textColor='text-white'
-          isMobile
-         />
+        {/* <ImageTextBox {...imageTextBoxData2}
+           textColor='text-white'
+         /> */}
         {/* </section> */}
 
         <GoogleReviews reviews={testimonials} />

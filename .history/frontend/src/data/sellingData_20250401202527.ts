@@ -119,47 +119,31 @@ export const slideShowSellingData = [
 
   export const sellingQuestions = [
     {
-      title: "What’s my home worth in today’s market?",
-      description: "Your home’s value depends on location, condition, size, and recent sales nearby. I offer a free Comparative Market Analysis (CMA) to determine your home’s true market value."
+      title: "How do I know when it's the right time to sell?",
+      description:
+        "The right time to sell is usually when market conditions are favorable, your home’s value has increased, and you are financially and personally ready to move on.",
     },
     {
-      title: "How long will it take to sell my home?",
-      description: "Most well-priced and well-marketed homes in Halifax sell within 1–4 weeks, depending on the market and property type."
+      title: "How should I price my home?",
+      description:
+        "Pricing your home correctly is crucial. Work with a realtor to evaluate comparable sales in your area and consider market trends to set a competitive price.",
     },
     {
-      title: "What do I need to do to prepare my home for sale?",
-      description: "Declutter, clean, touch up paint, and improve curb appeal. I’ll walk you through a prep checklist and can recommend trusted stagers or cleaners if needed."
+      title: "What are the costs of selling a home?",
+      description:
+        "The costs include agent commissions, closing costs, home repairs, and possible staging or marketing fees. A real estate agent can help estimate these expenses.",
     },
     {
-      title: "How much commission do you charge?",
-      description: "My commission is competitive and reflects the full-service marketing and negotiation support I provide. Let’s chat and I’ll break down exactly what’s included."
+      title: "Should I make repairs before selling?",
+      description:
+        "Making necessary repairs can increase the appeal of your home and help you get a higher price. However, major renovations may not always offer a return on investment.",
     },
     {
-      title: "What are the costs involved in selling my home?",
-      description: "Typical seller costs include: REALTOR®️ commission, legal fees, mortgage payout/discharge fees, repairs or staging (optional), and moving expenses."
+      title: "How long does it take to sell a home?",
+      description:
+        "The timeline depends on the market and the condition of your home. It can take anywhere from a few weeks to a few months, but having the right price and marketing plan can speed up the process.",
     },
-    {
-      title: "When is the best time to list my home in Halifax?",
-      description: "Spring and early summer are generally the busiest, but with the right strategy, homes sell year-round. I’ll advise based on current market activity and your personal timeline."
-    },
-    {
-      title: "Do I need to be present for showings?",
-      description: "No, in fact, it’s often better if you're not. Buyers feel more comfortable exploring a home freely. I’ll handle everything and keep you updated on feedback."
-    },
-    {
-      title: "What if my home doesn’t sell?",
-      description: "If a home isn’t selling, we’ll revisit pricing, marketing, or presentation. I proactively monitor listing performance and make adjustments if needed."
-    },
-    {
-      title: "Can I still sell if I haven’t found my next home yet?",
-      description: "Yes—many sellers add a 'Seller to find suitable housing' clause or negotiate a flexible closing date to give themselves time to buy after selling. Always better to have a plan and a home to go to!"
-    },
-    {
-      title: "What happens if something is found during the buyer’s inspection?",
-      description: "The buyer may request repairs, a credit, or a price reduction. I’ll guide you through negotiations to keep the deal on track."
-    }
-];
-
+  ];
 
   export const sellingCloser = {
     title: "Ready to Sell Your Home with Confidence?",

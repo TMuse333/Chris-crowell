@@ -43,19 +43,18 @@ const Homepage = () => {
  bg-gradient-to-b from-[#0077b3] to-blue-300"> */}
 
 
-        {/* <ImageTextBox {...imageTextBoxData}
+        <ImageTextBox {...imageTextBoxData}
         textColor="text-white"
          reverse customImage={<HouseMoney />
          
-      } /> */}
+      } />
 
-      {/* <div className="bg-white rounded-md w-[90vw]
+      <div className="bg-white rounded-md w-[90vw]
       h-[5px] max-w-[1200px] mx-auto"
-      /> */}
+      />
 
         <ImageTextBox {...imageTextBoxData2}
-          //  textColor='text-white'
-          isMobile
+           textColor='text-white'
          />
         {/* </section> */}
 

@@ -80,52 +80,39 @@ export const slideShowBuyingData = [
   
 
 
-  export const buyingDocumentsData = {
-    subTitle: "Essential Documents and Information for Buying a Home",
-    title: "Key Documents and Frequently Asked Questions in the Buying Process",
+export const buyingDocumentsData = {
+    subTitle: "Essential Documents for Buying a Home",
+    title: "Key Documents You’ll Need During the Buying Process",
     src: "/document.svg",
-    alt: "Documents and Q&A for Buying a Home",
-    description: "Navigating the home buying process involves both important documents and understanding key steps. Here are the essential documents and answers to commonly asked questions to help you feel confident during the process.",
+    alt: "Documents for Buying a Home",
+    description: "Buying a home involves important paperwork to ensure everything is in order. Here are the 4 crucial documents you’ll need to navigate the process smoothly.",
     listAspects: [
         {
             src: "/document.svg",
-            alt: "Working with a REALTOR®️ Form",
-            title: "Working with a REALTOR®️ Form",
-            description: "In Nova Scotia, this form outlines the working relationship between you and the REALTOR®️. It's one of the first steps in the process."
+            alt: "Mortgage Pre-Approval",
+            title: "Mortgage Pre-Approval",
+            description: "A document from your lender confirming your borrowing power, giving you a strong position when making an offer."
         },
         {
             src: "/document.svg",
-            alt: "Agency Agreement",
-            title: "Agency Agreement (Buyer or Seller Designated)",
-            description: "This document explains the roles and responsibilities of your REALTOR®️ and whether they represent the buyer or seller in the transaction."
+            alt: "Purchase Agreement",
+            title: "Purchase Agreement",
+            description: "A contract outlining the terms of the home purchase, including price, contingencies, and deadlines."
         },
         {
             src: "/document.svg",
-            alt: "Conditions in an Offer",
-            title: "What Are Conditions in an Offer and How Do They Protect Me?",
-            description: "Conditions give the buyer or seller time to complete necessary steps (such as inspections or securing financing). If conditions are unmet, the deal can be canceled without penalty."
+            alt: "Home Inspection Report",
+            title: "Home Inspection Report",
+            description: "A detailed evaluation of the home's condition, helping you make an informed buying decision."
         },
         {
             src: "/document.svg",
-            alt: "Offer to Purchase",
-            title: "What’s Included in an Offer to Purchase?",
-            description: "In Nova Scotia, an offer to purchase includes the purchase price, deposit, conditions, inclusions/exclusions, closing date, and signatures from all parties involved."
-        },
-        {
-            src: "/document.svg",
-            alt: "Lawyer’s Role in the Transaction",
-            title: "What’s the Role of My Lawyer in the Transaction?",
-            description: "Your real estate lawyer ensures the title is clear, coordinates the funds, registers the documents, and protects your legal interests throughout the closing process."
-        },
-        {
-            src: "/document.svg",
-            alt: "Deposit Handling",
-            title: "How Is the Deposit Handled, and Is It Refundable?",
-            description: "The deposit is held in trust by the listing brokerage and applied to the purchase at closing. If a condition isn’t met, it’s typically refunded—unless stated otherwise in the contract."
+            alt: "Closing Documents",
+            title: "Closing Documents",
+            description: "Final paperwork including loan documents, title transfer, and payment details to complete the purchase."
         }
     ]
 };
-
 
 export const buyingQuestions = [
     {

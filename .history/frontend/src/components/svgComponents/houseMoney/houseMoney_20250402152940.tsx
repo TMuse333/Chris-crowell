@@ -29,11 +29,11 @@ const HouseMoney = () => {
 
 {/* <div className="flex w-full h-[80%] "> */}
 
-            {/* <HouseSvg
+            <HouseSvg
             isClicked={isClicked}/>
             <DollarSignSvg
              isClicked={isClicked}
-            /> */}
+            />
             {/* </div>
             <p className="text-center">slatty</p> */}
 

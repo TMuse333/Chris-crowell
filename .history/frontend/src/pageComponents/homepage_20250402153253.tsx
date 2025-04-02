@@ -1,5 +1,3 @@
-"use client"
-
 import dynamic from "next/dynamic";
 import React from "react";
 import {
@@ -29,41 +27,39 @@ const Homepage = () => {
     <main className="w-screen ">
       <BigNav excludedLink="Home" />
 
-     
+      {/* HEROBANNERS */}
       <section className="overflow-x-hidden bg-gradient-to-tr from-blue-200 to-blue-100">
         <FullBodyHero />
 
-    
+        {/* CONTENT PIECES */}
         <ExperienceCard {...experienceCardData} buttonText="Let's get in touch"
         link="/contact" />
         <TextAndList {...textAndListData}
         link="/contact" />
 
-{/* <section className="w-screen py-12
- bg-gradient-to-b from-[#0077b3] to-blue-300"> */}
+<section className="w-screen py-12
+ bg-gradient-to-b from-[#0077b3] to-blue-300">
 
 
-        {/* <ImageTextBox {...imageTextBoxData}
+        <ImageTextBox {...imageTextBoxData}
         textColor="text-white"
          reverse customImage={<HouseMoney />
          
-      } /> */}
+      } />
 
-      {/* <div className="bg-white rounded-md w-[90vw]
-      h-[5px] max-w-[1200px] mx-auto"
-      /> */}
+      <div className="bg-white rounded-md w-[90vw]
+      h-[5px] max-w-[120"
 
         <ImageTextBox {...imageTextBoxData2}
-          //  textColor='text-white'
-          isMobile
+           textColor='text-white'
          />
-        {/* </section> */}
+        </section>
 
         <GoogleReviews reviews={testimonials} />
       </section>
 
       <ParallaxText {...parallaxTextContentData} link="/podcast" />
-
+      {/* <TextParallaxContentExample {...parallaxTextContentData} link="/podcast" /> */}
 
       <section className="overflow-x-hidden bg-gradient-to-tr from-blue-200 to-blue-100">
         <VerticalImageTextBox {...closingStatement} />

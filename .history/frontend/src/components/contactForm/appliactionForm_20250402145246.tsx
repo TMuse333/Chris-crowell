@@ -100,7 +100,7 @@ const ApplicationForm = () => {
                 text-center px-4
                 font-semibold sm:text-lg md:text-xl">Here’s what you can expect when you reach out:
 </p>
-               <ul className="text-black px-2">
+               <ul className="text-black">
                 {aspects.map((aspect,index) => (
                     <li className="mb-2 flex items-center" key={index}>
                     <Check className="w-5 h-5 text-green-500 mr-2" />

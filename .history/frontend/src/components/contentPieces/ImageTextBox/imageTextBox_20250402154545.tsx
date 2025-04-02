@@ -171,7 +171,6 @@ const imageFadeIn = (delay:number) => {
        
       </div>
     </section>
-    </section>
     </>
   );
 };

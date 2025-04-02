@@ -87,8 +87,8 @@ const imageFadeIn = (delay:number) => {
   return (
     <>
     <section>
-
-   
+      
+    </section>
      <motion.h2
       ref={headerRef}
       variants={fadeIn(0)}
@@ -170,7 +170,6 @@ const imageFadeIn = (delay:number) => {
 
        
       </div>
-    </section>
     </section>
     </>
   );

@@ -26,7 +26,7 @@ export const lorem60 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit
 
   
     reverse: false, // Optional: You can set it to true if needed to adjust the layout
-    title: 'Sell Faster. Sell Smarter. Sell for More.',
+    title: 'Stress-Free Home Selling',
     buttonLink: '/selling-your-home', // Link to the About page
     buttonText: 'Sell my home'
   };
@@ -181,17 +181,18 @@ export const testimonialsData = {
   
 
 
-  export const closingStatement = {
-    title: "Let’s Make Your Move in Halifax Real Estate",
-    description: `Whether you're buying your first home, selling your current property, or investing in Halifax real estate, you deserve a REALTOR®️ who’s deeply connected, highly experienced, and genuinely invested in your success. With over 12 years of sales and negotiation expertise, local market insight, and a people-first approach, I’m here to make your real estate journey smooth, strategic, and stress-free.
+export const closingStatement = {
+  title: "Transform Your Well-Being Today",
+  description: `Whether you’re buying your first home, upgrading to a dream property, or selling to start a new chapter, I’m here to make the process simple and stress-free. With deep roots in Halifax and over a decade of sales and marketing experience, I combine local market knowledge with personalized service to help you reach your real estate goals.
+
+  As a proud member of RE/MAX Nova, I focus on delivering results while building lasting relationships. My mission is to provide expert advice, innovative strategies, and clear communication every step of the way.
   
-    Let’s connect. I’ll answer your questions, walk you through your options, and help you make confident decisions—no pressure, just honest guidance.
+  Let’s navigate the Halifax real estate market together—whether you're looking for a cozy home in Sackville, a vibrant condo in Downtown Halifax, or a rental property to build your investment portfolio.
   
-    📲 Reach out today to book a free consultation or get started on your next move.`,
-    buttonText: "Book Your Appointment Now",
-    buttonDestination: "/contact",
-  };
-  
+  Ready to get started? I’d love to hear your story and help you take the next step.`,
+  buttonText: "Book Your Appointment Now",
+  buttonDestination: "/contact",
+};
 
 // src:string,
 // alt:string,

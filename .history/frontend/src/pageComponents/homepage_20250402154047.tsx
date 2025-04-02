@@ -54,8 +54,7 @@ const Homepage = () => {
       /> */}
 
         <ImageTextBox {...imageTextBoxData2}
-          //  textColor='text-white'
-          isMobile
+           textColor='text-white'
          />
         {/* </section> */}
 
