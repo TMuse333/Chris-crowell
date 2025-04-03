@@ -33,6 +33,7 @@ const [isDesktop, setIsDesktop] = useState(false)
 const [applicationFormState, setApplicationFormState] = useState<Record<string, string>>({});
 
 
+
 useEffect(() => {
   // Check if window is available (client-side only)
   if (typeof window !== 'undefined') {
@@ -52,11 +53,14 @@ useEffect(() => {
   }
 }, []);
 
+return { isMobile, isDesktop };
+};
 
-  // useEffect(() => {
-  //   console.log('is mobile', isMobile);
-  //   console.log("is desktop", isDesktop)
-  // }, [isDesktop]);
+
+  useEffect(() => {
+    console.log('is mobile', isMobile);
+    console.log("is desktop", isDesktop)
+  }, [isDesktop]);
 
   const contextValue = {
 

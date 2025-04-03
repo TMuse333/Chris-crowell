@@ -1,6 +1,6 @@
 "use client"; // Enable client-side rendering for this component
 
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Link from "next/link";
 import Image from 'next/image'
 import {motion, useInView} from 'framer-motion'
@@ -17,7 +17,7 @@ interface ContentProps {
   buttonText?: string;
   bgColor?:boolean;
   customImage?: React.ReactNode
-  objectContain?:boolean
+  objectContain?:boolean,
   textColor?:string
 
 }
@@ -53,6 +53,13 @@ const imgInView = useInView(imgRef, {
 const pInView = useInView(pRef, {
   once: true,
 });
+
+const [isClient, setIsClient] = useState(false);
+
+useEffect(() => {
+  setIsClient(true);
+}, []);
+
 
 
 // const MotionImage = motion(Image)
@@ -95,22 +102,26 @@ const imageFadeIn = (delay:number) => {
 
   return (
     <>
-     <motion.h2
+{isClient && (
+
+<>
+
+     {/* <motion.h2
       ref={headerRef}
       variants={fadeIn(0)}
       initial='initial'
       animate={headerInView  ? 'animate' : 'initial'}
-       className={`${textColor ? `${textColor} ` : 'text-black'} text-center text-4xl relative z-[2] md:hidden
+       className={`${textColor ? `${textColor}` : 'text-black'} text-center text-4xl relative z-[2] md:hidden
        font-cursive`}>
         {title}
-      </motion.h2>
+      </motion.h2> */}
   
     <section
-      className={`overflow-x-hidden flex flex-col justify-center 
-      ${textColor ? `${textColor} ` : 'text-black'}
-      items-center pt-8 pb-8 relative mx-auto max-w-[1200px] ${
+      className={`overflow-x-hidden flex flex-col justify-center items-center pt-8 pb-8 relative mx-auto max-w-[1200px]
+      ${textColor ? `${textColor}` : 'text-black'}
+      ${
         reverse ? "md:flex-row-reverse" : "md:flex-row"
-        
+
       } ${bgColor ? `bg-component-color` : ''}
       `}
     >
@@ -147,13 +158,14 @@ const imageFadeIn = (delay:number) => {
 
 )}
 
-      <div className="w-screen md:w-[45vw] pr-4 md:pr-0">
+      <div className="w-screen md:w-[45vw] pr-4 md:pr-0
+      ">
         <motion.h2 
         //  ref={headerRef}
          variants={fadeIn(0)}
          initial='initial'
          animate={imgInView && !isMobile ? 'animate' : 'initial'}
-        className="hidden md:block text-left pl-5 sm:pl-12 pt-5 sm:text-4xl font-semibold text-3xl pr-3
+        className="hidden md:block text-left pl-5 sm:pl-12 pt-5 sm:text-4xl font-semibold  text-3xl pr-3
         font-cursive">
           {title}
         </motion.h2>
@@ -187,6 +199,8 @@ const imageFadeIn = (delay:number) => {
        
       </div>
     </section>
+    </>
+    )}
     </>
   );
 };

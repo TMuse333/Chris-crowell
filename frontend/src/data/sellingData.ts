@@ -7,13 +7,16 @@ export const sellingHerobanner = {
 }
 
 
-
+// src: "/prepare-home.webp",
+// src: "/listing.png",
+// src: "/negotiation2.png",
+// src: "/close-deal.webp",
 
 
 export const slideShowSellingData = [
   {
     title: 'Step 1: Initial Consultation',
-    src: "/consultation.jpg",
+      src: "/prepare-home.webp",
     alt: "Initial consultation with REALTOR®️",
     description: "Meet with your REALTOR®️ to discuss your goals, timeline, and expectations. We’ll do a walkthrough of your home, assess its condition, and discuss how to make the selling process smooth and stress-free.",
     isVideo: false
@@ -27,7 +30,7 @@ export const slideShowSellingData = [
   },
   {
     title: 'Step 3: Prepare Your Home for Market',
-    src: "/home-prep.jpg",
+src: "/prepare-home.webp",
     alt: "Preparing your home for the market",
     description: "First impressions matter. We’ll help declutter, clean, and stage your home to make it shine. I’ll also guide you through any needed repairs and arrange for professional photos and videos to showcase your home.",
     isVideo: false
@@ -41,14 +44,14 @@ export const slideShowSellingData = [
   },
   {
     title: 'Step 5: Launch Your Listing',
-    src: "/listing-launch.jpg",
+src: "/listing.png",
     alt: "Launching your home listing",
     description: "Once your home is ready, we’ll go live on MLS®️, complete with professional photos and compelling descriptions. We’ll execute a marketing strategy to get your property the exposure it deserves.",
     isVideo: false
   },
   {
     title: 'Step 6: Reviewing Offers',
-    src: "/review-offers.jpg",
+src: "/negotiation2.png",
     alt: "Reviewing offers on the home",
     description: "When offers come in, I’ll present each one and help you negotiate terms, price, and conditions. Together, we’ll accept the best offer to move forward with the sale.",
     isVideo: false
@@ -69,7 +72,7 @@ export const slideShowSellingData = [
   },
   {
     title: 'Step 9: Closing Day',
-    src: "/closing-day.jpg",
+   src: "/close-deal.webp",
     alt: "Closing day for home sale",
     description: "On closing day, your lawyer will finalize the sale, transfer the funds, and register the deed. Once everything is settled, you’ll hand over the keys to the buyer and officially complete the sale!",
     isVideo: false

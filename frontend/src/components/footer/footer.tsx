@@ -4,7 +4,8 @@ import React from "react";
 // import linkedin from '../../../public/media/linkedin.png'
 
 import Link from "next/link";
-
+import logo from '../../../public/logo.webp'
+import Image from "next/image";
 
 
 interface props  {
@@ -131,6 +132,14 @@ const Footer2:React.FC<props> = ({
       <footer className="w-screen relative flex flex-col items-center justify-center mx-auto py-8
       bg-gray-700">
       <h6 className="text-3xl sm:text-4xl font-semibold mb-8">Site map</h6>
+
+      <Image
+      src={logo}
+      alt="Chris Crowell Logo"
+      width={600}
+      height={1300}
+      className='w-[70vw] object-contain mx-auto max-w-[350px]'
+      />
     
       <div className="flex flex-col mx-auto sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:flex-row w-full mt-6 justify-center items-center md:justify-center md:items-start">
         {filteredLinks.map((link, index) => (

@@ -38,10 +38,10 @@ const BuyingPage = () => {
             {/* <CarouselHero
             {...carouselHeroData}
             /> */}
-            <ImageTextBox
+            {/* <ImageTextBox
             {...buyingIntro}
             customImage={<HouseMoney/>}
-            />
+            /> */}
 
             {/* <StepByStep
             steps={realEstateSteps}
@@ -59,22 +59,6 @@ const BuyingPage = () => {
             hasIntro={false}
             text={buyingQuestions}
             />
-
-<div className="w-screen mx-auto overflow-x-scroll
-max-w-[1000px]">
-
-<iframe 
-  
-  style={{
-    width: "960px",
-    height: "600px"
-  }}
-  src="https://chriscrowell.remax-ns.ca/wide.php" 
-  allowTransparency
-  frameBorder="0">
-</iframe>
-
-</div>
 
             <VerticalImageTextBox
             {...buyingCloser}

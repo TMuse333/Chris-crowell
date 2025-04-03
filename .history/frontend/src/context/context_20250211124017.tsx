@@ -32,31 +32,53 @@ const [isDesktop, setIsDesktop] = useState(false)
 
 const [applicationFormState, setApplicationFormState] = useState<Record<string, string>>({});
 
-
-useEffect(() => {
-  // Check if window is available (client-side only)
-  if (typeof window !== 'undefined') {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 865); // Set isMobile state based on window width
-      setIsDesktop(window.innerWidth > 865); // Optionally set isDesktop state
+  useEffect(() => {
+    const handleScroll = () => {
+      if (typeof window !== 'undefined') {
+        setIsMobile(window.innerWidth <= 865);
+      }
+      else{
+        setIsDesktop(true)
+      }
     };
 
-    // Listen for window resize event and initial check
-    window.addEventListener('resize', handleResize);
-    handleResize(); // Initial check on mount
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', handleScroll);
+      handleScroll(); // Initial check
+    }
 
-    // Cleanup listener on component unmount
     return () => {
-      window.removeEventListener('resize', handleResize);
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('scroll', handleScroll);
+      }
     };
-  }
-}, []);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (typeof window !== 'undefined') {
+        setIsDesktop(window.innerWidth > 868);
+      }
+     
+    };
+
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', handleScroll);
+      handleScroll(); // Initial check
+    }
+
+    return () => {
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('scroll', handleScroll);
+      }
+    };
+  }, []);
 
 
-  // useEffect(() => {
-  //   console.log('is mobile', isMobile);
-  //   console.log("is desktop", isDesktop)
-  // }, [isDesktop]);
+  useEffect(() => {
+    console.log('is mobile', isMobile);
+    console.log("is desktop", isDesktop)
+  }, [isDesktop]);
 
   const contextValue = {
 

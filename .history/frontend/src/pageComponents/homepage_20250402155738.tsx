@@ -11,8 +11,7 @@ import {
   parallaxTextContentData,
   textAndListData,
 } from "@/data/homepageData";
-// import logo from '../../public/logo.webp'
-// import Image from "next/image";
+
 // Dynamically import components
 import FullBodyHero from "@/components/herobanners/fullBodyHero/fullBodyHero";
 const ExperienceCard = dynamic(() => import("@/components/contentPieces/experienceCard/experienceCard"));
@@ -41,56 +40,26 @@ const Homepage = () => {
         link="/contact" />
 
 <section className="w-screen py-12
- bg-gradient-to-b from-[#0077b3] to-blue-300 mb-[4rem]">
+ bg-gradient-to-b from-[#0077b3] to-blue-300">
 
 
-        <ImageTextBox {...imageTextBoxData}
+        {/* <ImageTextBox {...imageTextBoxData}
         textColor="text-white"
          reverse customImage={<HouseMoney />
          
-      } />
+      } /> */}
 
       <div className="bg-white rounded-md w-[90vw]
       h-[5px] max-w-[1200px] mx-auto"
       />
 
         <ImageTextBox 
-        
         {...imageTextBoxData2}
            textColor='text-white'
          />
         </section>
 
         <GoogleReviews reviews={testimonials} />
-
-{/* <div className="flex flex-col text-black
-items-center justify-center mb-[-12rem]">
-
-<Image
-      src={logo}
-      alt="Chris Crowell Logo"
-      width={600}
-      height={1300}
-      className='w-[70vw]  object-contain mx-auto max-w-[350px]'
-      />
-
-<h2 className='font-semibold text-3xl sm:text-4xl
-md:text-5xl mb-2'>Property evalubator</h2>
-<p className="px-2 mt-2">Here is where you can enter you address to get your home evaluated</p>
-
-
-
-        <iframe 
-  src="https://chriscrowell.remax-ns.ca/sellembed.php" 
-  
-  className="w-[90vw]  px-2 bg-red-200 mt-4 mx-auto max-w-[700px] h-[80vh] border-none
-  max-h-[400px]"
-></iframe>
-
-
-
-</div> */}
-
       </section>
 
       <ParallaxText {...parallaxTextContentData} link="/podcast" />

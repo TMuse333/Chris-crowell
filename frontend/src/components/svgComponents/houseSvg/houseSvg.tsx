@@ -16,7 +16,7 @@ const HouseSvg:React.FC<Props> = ({
 
   return (
     <>
-    <section className={`w-[45vw] h-[45vw] z-[4]
+    <div className={`w-[45vw] h-[45vw] z-[4]
     p-0 absolute top-1/2 -translate-y-1/2
     max-w-[250px] max-h-[250px] transition-all duration-700
 
@@ -41,7 +41,7 @@ const HouseSvg:React.FC<Props> = ({
       >
         Toggle SVG Color
       </button> */}
-    </section>
+    </div>
   
     </>
   );

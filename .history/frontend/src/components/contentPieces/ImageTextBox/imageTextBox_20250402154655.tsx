@@ -1,58 +1,49 @@
 "use client"; // Enable client-side rendering for this component
 
 import React, { useRef } from "react";
-import Link from "next/link";
+
 import Image from 'next/image'
 import {motion, useInView} from 'framer-motion'
-import { useGeneralContext } from "@/context/context";
 
 
-interface ContentProps {
+
+export interface ImageTextBoxProps {
   src: string;
   alt: string;
   description: string;
   reverse?: boolean;
   title: string;
-  buttonLink?: string;
-  buttonText?: string;
-  bgColor?:boolean;
+  bgColor?:string;
   customImage?: React.ReactNode
-  objectContain?:boolean
-  textColor?:string
+  objectContain?:boolean,
+  isMobile:boolean,
+  button?:React.ReactNode
 
 }
 
-const ImageTextBox: React.FC<ContentProps> = ({
-  src,
-  alt,
-  description,
-  reverse = false,
-  title,
-  buttonLink,
-  buttonText = "Learn More",
-  bgColor,
-  customImage,
-  objectContain,
-  textColor
-}) => {
+const ImageTextBox = ({
+    src,
+    alt,
+    description,
+    reverse = false,
+    title,
+    bgColor,
+    customImage,
+    objectContain,
+    isMobile,
+    button
+  }: ImageTextBoxProps): React.JSX.Element => {
+  
 
-  const {isMobile} = useGeneralContext()
+
 const headerRef = useRef(null)
 const imgRef = useRef(null)
 const pRef = useRef(null)
 
-const headerInView = useInView(headerRef,{
-  once:true,
+const headerInView = useInView(headerRef, { once: true }) ?? false;
+const imgInView = useInView(imgRef, { once: true, amount: !isMobile ? 0.6 : 0.2 }) ?? false;
+const pInView = useInView(pRef, { once: true }) ?? false;
 
-})
-const imgInView = useInView(imgRef, {
-  once: true,
-  amount: !isMobile ? 0.6 : 0.2
-});
-
-const pInView = useInView(pRef, {
-  once: true,
-});
 
 
 // const MotionImage = motion(Image)
@@ -95,23 +86,24 @@ const imageFadeIn = (delay:number) => {
 
   return (
     <>
+    <section>
+      
+    </section>
      <motion.h2
       ref={headerRef}
       variants={fadeIn(0)}
       initial='initial'
       animate={headerInView  ? 'animate' : 'initial'}
-       className={`${textColor ? `${textColor} ` : 'text-black'} text-center text-4xl relative z-[2] md:hidden
-       font-cursive`}>
+       className=" text-center text-4xl relative z-[2] md:hidden
+       font-cursive">
         {title}
       </motion.h2>
   
     <section
-      className={`overflow-x-hidden flex flex-col justify-center 
-      ${textColor ? `${textColor} ` : 'text-black'}
-      items-center pt-8 pb-8 relative mx-auto max-w-[1200px] ${
+      className={`overflow-x-hidden flex flex-col justify-center items-center pt-8 pb-8 relative mx-auto max-w-[1200px] ${
         reverse ? "md:flex-row-reverse" : "md:flex-row"
-        
-      } ${bgColor ? `bg-component-color` : ''}
+
+      } ${bgColor ? `${bgColor}` : ''}
       `}
     >
      
@@ -147,20 +139,21 @@ const imageFadeIn = (delay:number) => {
 
 )}
 
-      <div className="w-screen md:w-[45vw] pr-4 md:pr-0">
+      <div className="w-screen md:w-[45vw] pr-4 md:pr-0
+      md:mb-auto md:mt-12">
         <motion.h2 
         //  ref={headerRef}
          variants={fadeIn(0)}
          initial='initial'
          animate={imgInView && !isMobile ? 'animate' : 'initial'}
-        className="hidden md:block text-left pl-5 sm:pl-12 pt-5 sm:text-4xl font-semibold text-3xl pr-3
+        className="hidden md:block text-left pl-5 sm:pl-12 pt-5 sm:text-4xl font-semibold  text-3xl pr-3
         font-cursive">
           {title}
         </motion.h2>
 
         <motion.p
         ref={pRef}
-         className="mt-6 pl-5 text-left sm:pl-12 pr-4 "
+         className="mt-6 pl-5 text-left sm:pl-12 pr-4"
          variants={fadeIn(isMobile ? 0 : 0.2)}
          initial="initial"
          animate={pInView ? 'animate' : 'initial'}
@@ -168,20 +161,11 @@ const imageFadeIn = (delay:number) => {
           
           {description}
           <br/>
-          {buttonLink && (
-          <Link href={buttonLink}>
-          <motion.button
-  className="mt-6 p-3  rounded-xl text-white bg-gradient-to-br from-blue-400 to-blue-300 
-            hover:bg-gradient-to-br hover:from-blue-800 hover:to-blue-300 
-            hover:bg-white  transition-all "
-
-             variants={fadeIn(isMobile ? 0 : 0.4)}
-             initial="initial"
-             animate={pInView ? 'animate' : 'initial'}>
-              {buttonText}
-            </motion.button>
-          </Link>
-        )}
+          {button && (
+       <>
+       {button}
+       </>
+          )}
         </motion.p>
 
        

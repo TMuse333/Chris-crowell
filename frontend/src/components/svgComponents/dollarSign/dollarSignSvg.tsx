@@ -15,7 +15,7 @@ const DollarSignSvg:React.FC<Props> = ({
  
 //    absolute top-1/2 -translate-y-1/2 left-[${isClicked ? "0%" : "2%" }] 
   return (
-    <section className={`w-[35vw] h-[35vw]
+    <div className={`w-[35vw] h-[35vw]
     max-w-[200px] max-h-[200px] bg-white rounded-3xl p-2
     transition-all  flex justify-center items-center 
     absolute top-1/2 -translate-y-1/2
@@ -70,7 +70,7 @@ const DollarSignSvg:React.FC<Props> = ({
       >
         Toggle SVG Gradient Color
       </button> */}
-    </section>
+    </div>
   );
 };
 

@@ -33,24 +33,7 @@ const [isDesktop, setIsDesktop] = useState(false)
 const [applicationFormState, setApplicationFormState] = useState<Record<string, string>>({});
 
 
-useEffect(() => {
-  // Check if window is available (client-side only)
-  if (typeof window !== 'undefined') {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 865); // Set isMobile state based on window width
-      setIsDesktop(window.innerWidth > 865); // Optionally set isDesktop state
-    };
 
-    // Listen for window resize event and initial check
-    window.addEventListener('resize', handleResize);
-    handleResize(); // Initial check on mount
-
-    // Cleanup listener on component unmount
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }
-}, []);
 
 
   // useEffect(() => {

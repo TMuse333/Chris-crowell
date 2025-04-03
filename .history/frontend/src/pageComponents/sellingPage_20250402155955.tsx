@@ -12,14 +12,17 @@ import HouseMoney from "@/components/svgComponents/houseMoney/houseMoney";
 import TextAndList from "@/components/textAndList/textAndList";
 import Accordion from "@/components/textComponents/accordion/accordion";
 // import { carouselHeroData} from "@/data/homepageData";
-import { buyingHerobanner, slideShowBuyingData,
-    buyingQuestions, buyingDocumentsData,
-    buyingCloser,
-    buyingIntro} from "@/data/buyingData";
+import { sellingHerobanner,
+    // realEstateSteps,
+    slideShowSellingData, documentsData,
+    sellingQuestions, 
+    sellingCloser,
+    sellingIntro} from "@/data/sellingData";
 import React from "react";
 
 
-const BuyingPage = () => {
+
+const SellingPage = () => {
 
 
     return (
@@ -27,61 +30,45 @@ const BuyingPage = () => {
         bg-gradient-to-tr from-blue-200 to-blue-100">
 
             <BigNav
-            excludedLink="Buy a home"
+            excludedLink="Selling your home"
             />
 
             <ServiceHerobanner
-            {...buyingHerobanner}
+            {...sellingHerobanner}
             alt='alt'
             />
 
             {/* <CarouselHero
             {...carouselHeroData}
             /> */}
-            <ImageTextBox
-            {...buyingIntro}
+            {/* <ImageTextBox
+            {...sellingIntro}
             customImage={<HouseMoney/>}
-            />
+            /> */}
 
             {/* <StepByStep
             steps={realEstateSteps}
             /> */}
 
             <SlideShowCarousel
-            images={slideShowBuyingData}
+            images={slideShowSellingData}
             />
 
             <TextAndList
-            {...buyingDocumentsData}
+            {...documentsData}
             />
 
             <Accordion
             hasIntro={false}
-            text={buyingQuestions}
+            text={sellingQuestions}
             />
 
-<div className="w-screen mx-auto overflow-x-scroll
-max-w-[1000px]">
-
-<iframe 
-  
-  style={{
-    width: "960px",
-    height: "600px"
-  }}
-  src="https://chriscrowell.remax-ns.ca/wide.php" 
-  allowTransparency
-  frameBorder="0">
-</iframe>
-
-</div>
-
             <VerticalImageTextBox
-            {...buyingCloser}
+            {...sellingCloser}
             />
 
             <Footer2
-            excludedLink="Buy a home"
+            excludedLink="Selling your home"
             />
 
 
@@ -89,4 +76,4 @@ max-w-[1000px]">
     )
 }
 
-export default BuyingPage
+export default SellingPage
