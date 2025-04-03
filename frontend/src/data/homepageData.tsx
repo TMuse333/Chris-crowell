@@ -55,9 +55,9 @@ export const lorem60 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit
         ,
   
     aspects: [
-        '10+ years sales',
-        'Dolor Sit Amet Relaxation',
-        'Seamless & Effortless Booking',
+        // '10+ years sales',
+        // 'Dolor Sit Amet Relaxation',
+        // 'Seamless & Effortless Booking',
       
     ],
     link: '/contact',
