@@ -49,7 +49,7 @@ export const workCredentials = [
 export const aboutImageTextBox = {
     title:'About me',
     description: "I have over 10 years of experience in sales and client relationship management, backed by a Bachelor of Commerce in Marketing from Saint Mary's University. Before entering real estate, I spent 9 years as a District Manager with Unilever Canada, overseeing the Atlantic territory. My background in contract negotiation and data-driven decision making helps me bring a strategic, thoughtful approach to every client interaction.",
-    src:'/place-holder.jpg',
+    src:'/chris-crowell-sign.jpeg',
     alt:'alt'
 }
 

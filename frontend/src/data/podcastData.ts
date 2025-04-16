@@ -23,7 +23,9 @@ export const podcastCarouselHero = {
     "Stay up to date with the latest real estate trends, tips, and market insights. Listen as John Doe shares valuable knowledge and interviews industry experts to help you make informed decisions.",
   buttonText: "Listen Now",
 };
-
+//1230
+//52 episodes
+//17300
 
 export const podcastCountup = {
     src: "/chris-side.webp",
@@ -32,15 +34,15 @@ export const podcastCountup = {
     description: `Bringing real estate insights, market trends, and expert interviews to Halifax and beyond. Tune in to stay informed, get valuable advice, and hear from industry professionals.`,
     stats: [
       {
-        number: "50+",
+        number: "52+",
         name: "Episodes Released",
       },
       {
-        number: "100K+",
+        number: "17300+",
         name: "Total Views & Streams",
       },
       {
-        number: "1000+",
+        number: "1230+",
         name: "Subscribers",
       },
     ],

@@ -26,6 +26,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [tabProgress, setTabProgress] = useState<number>(0);
   const [slideInProgress, setSlideInProgress] = useState(true);
+  const [paused, setPaused] = useState<boolean>(false); // State to track if the carousel is paused
 
   useEffect(() => {
     setTabProgress(0);
@@ -40,18 +41,58 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
   }, [tabProgress, images.length]);
 
   useEffect(() => {
+    if (paused) return; // If paused, do not run the interval
+
     const interval = setInterval(() => {
       if (tabProgress < 100) {
         setTabProgress((prev) => prev + 0.5);
       }
     }, 50);
+
     return () => clearInterval(interval);
-  }, [tabProgress]);
+  }, [tabProgress, paused]); // Re-run interval effect only when paused state changes
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const handlePauseResume = () => {
+    setPaused((prev) => !prev); // Toggle pause/resume
+  };
 
   return (
     <section
       className="relative w-[98vw] md:w-[60vw] rounded-2xl object-contain mx-auto md:block h-[80vh] mt-auto mb-auto border border-white border-4 text-center bg-black"
     >
+
+
+    
+      {/* Left Arrow */}
+      <button
+        onClick={handlePrev}
+        className="absolute left-0 top-1/2 transform -translate-y-1/2 text-white text-4xl z-10 hover:scale-110 transition
+        sm:text-5xl"
+        aria-label="Previous slide"
+      >
+        &lt;
+      </button>
+
+      {/* Right Arrow */}
+      <button
+        onClick={handleNext}
+        className="absolute sm:text-5xl right-0 top-1/2 transform -translate-y-1/2 text-white text-4xl z-10 hover:scale-110 transition"
+        aria-label="Next slide"
+      >
+        &gt;
+      </button>
+      
+
       <AnimatePresence mode="wait">
         <motion.div
           key={currentIndex}
@@ -71,11 +112,12 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
         </motion.div>
       </AnimatePresence>
 
-      <div className="absolute flex bottom-[5%] left-1/2 -translate-x-1/2">
+      <div className="absolute flex bottom-[5%] left-1/2 -translate-x-1/2
+      z-[10]">
         {images.map((_, index) => (
           <div
             key={index}
-            className={`h-[8px] relative w-[50px] bg-gray-600 mr-3 hover:scale-[1.2] transition-all`}
+            className={`h-[8px] relative w-[25px] sm:w-[35px] md:w-[50px] bg-gray-600 mr-3 hover:scale-[1.2] transition-all cursor-pointer`}
             onClick={() => setCurrentIndex(index)}
           >
             {index === currentIndex && (
@@ -90,9 +132,20 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
           </div>
         ))}
       </div>
+
+      {/* Pause/Go Button */}
+      <button
+        onClick={handlePauseResume}
+        className="absolute bottom-[8%] left-1/2 transform -translate-x-1/2 text-white text-xl px-4 py-2 bg-gray-700 rounded-full hover:bg-gray-600 transition"
+        aria-label={paused ? "Resume slideshow" : "Pause slideshow"}
+      >
+        {paused ? "Resume" : "Pause"}
+      </button>
     </section>
   );
 };
+
+
 
 const CarouselHero: React.FC<CarouselHeroProps> = ({
   mainHeader,

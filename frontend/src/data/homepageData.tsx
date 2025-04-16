@@ -22,7 +22,33 @@ export const carouselHeroData = {
       {
         src:'/chris-family.png',
         alt:'Chris Family'
-      }
+      },
+      {
+        src:'/jiu-jutsu2.jpeg',
+        alt:"Chris jiu jutsu"
+      },
+      {
+        src:'/chris-and-wife.jpg',
+        alt:"Chris jiu jutsu"
+      },
+      {
+        src:'/chris-crowell-christmas.jpeg',
+        alt:"Chris jiu jutsu"
+      },
+      {
+        src:'/chris-crowell-dog.jpeg',
+        alt:"Chris jiu jutsu"
+
+      },
+      {
+        src:'/chris-outside-dog.jpg',
+        alt:"Chris jiu jutsu"
+      },
+      {
+        src:'/chris-outside.jpg',
+        alt:"Chris jiu jutsu"
+      },
+
     ]
   };
 
