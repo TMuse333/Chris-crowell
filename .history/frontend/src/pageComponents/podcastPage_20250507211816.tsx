@@ -48,8 +48,8 @@ const PodcastPage = () => {
 
             <ExperienceCard
             {...podcastExperienceCard}
-         
-          
+            buttonColor="bg-blue-500"
+            bgColor="bg-gradient-to-b from-[#0077b3] to-blue-300"
             buttonText=""
             />
 

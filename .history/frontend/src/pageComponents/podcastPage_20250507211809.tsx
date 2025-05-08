@@ -3,7 +3,6 @@
 // import Carousel from "@/components/carousels/carousel/carousel";
 import BgText from "@/components/contentPieces/bgText/bgText";
 import CountUpImageText from "@/components/contentPieces/countUpImageText/countUpImageText";
-import ExperienceCard from "@/components/contentPieces/experienceCard/experienceCard";
 // import ExperienceCard from "@/components/contentPieces/experienceCard/experienceCard";
 import PodcastGrid from "@/components/contentPieces/podcastGrid/podcastGrid";
 import Footer2 from "@/components/footer/footer";
@@ -48,8 +47,8 @@ const PodcastPage = () => {
 
             <ExperienceCard
             {...podcastExperienceCard}
-         
-          
+            buttonColor="bg-blue-500"
+            bgColor="bg-gradient-to-b from-[#0077b3] to-blue-300"
             buttonText=""
             />
 
