@@ -3,7 +3,7 @@
 // import Carousel from "@/components/carousels/carousel/carousel";
 import BgText from "@/components/contentPieces/bgText/bgText";
 import CountUpImageText from "@/components/contentPieces/countUpImageText/countUpImageText";
-import ExperienceCard from "@/components/contentPieces/experienceCard/experienceCard";
+import ExperienceCard from "@/components/cardOfExperience/cardOfExperience";
 // import ExperienceCard from "@/components/contentPieces/experienceCard/experienceCard";
 import PodcastGrid from "@/components/contentPieces/podcastGrid/podcastGrid";
 import Footer2 from "@/components/footer/footer";

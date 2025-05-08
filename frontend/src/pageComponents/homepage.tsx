@@ -15,12 +15,13 @@ import {
 // import Image from "next/image";
 // Dynamically import components
 import FullBodyHero from "@/components/herobanners/fullBodyHero/fullBodyHero";
-import ExperienceCard from "@/components/contentPieces/experienceCard/experienceCard";
+import ExperienceCard from "@/components/cardOfExperience/cardOfExperience";
 const ImageTextBox = dynamic(() => import("@/components/contentPieces/ImageTextBox/imageTextBox"));
 import  ParallaxText  from "@/components/contentPieces/parallaxText/parallaxText";
 import GoogleMap from "@/components/contentPieces/googleMap/googleMap";
 // import ExperienceCard2 from "@/components/contentPieces/experienceCard/experienceCard";
 import Navbar from "@/components/navBars/navbar";
+import CardOfExperience from "@/components/cardOfExperience/cardOfExperience";
 const TextAndList = dynamic(() => import("@/components/textAndList/textAndList"));
 const HouseMoney = dynamic(() => import("@/components/svgComponents/houseMoney/houseMoney"));
 const VerticalImageTextBox = dynamic(() => import("@/components/contentPieces/verticalImageText/verticalImageTextBox"));
@@ -38,13 +39,13 @@ const Homepage = () => {
         <FullBodyHero />
 
     
-        <ExperienceCard
+        <CardOfExperience
      
     
          {...experienceCardData} buttonText="Let's get in touch"
         link="/contact" />
-        <TextAndList {...textAndListData}
-        link="/contact" />
+        {/* <TextAndList {...textAndListData}
+        link="/contact" /> */}
 
 <section className="w-screen py-8
  bg-gradient-to-b from-[#0077b3] to-blue-300 mb-[4rem]">
