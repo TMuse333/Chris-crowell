@@ -9,7 +9,7 @@ import Footer2 from "@/components/footer/footer";
 // import ServiceHerobanner from "@/components/herobanners/serviceHerobanner/serviceHerobanner";
 // import BigNav from "@/components/navBars/bigNav/bigNav";
 // import HouseMoney from "@/components/svgComponents/houseMoney/houseMoney";
-import TextAndList from "@/components/textAndList/textAndList";
+
 import Accordion from "@/components/textComponents/accordion/accordion";
 // import { carouselHeroData} from "@/data/homepageData";
 import logo from '../../public/logo.webp'
@@ -26,6 +26,7 @@ import React from "react";
 import CircleSteps from "@/components/carousels/circleSteps/circleSteps";
 import Navbar from "@/components/navBars/navbar";
 import ThreeBoxHero from "@/components/herobanners/threeBoxHero/threeBoxHero";
+import TextAndList from "@/components/textComponents/textAndList/textAndList";
 
 
 

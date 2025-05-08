@@ -12,8 +12,9 @@ import ThreeBoxHero from "@/components/herobanners/threeBoxHero/threeBoxHero";
 // import BigNav from "@/components/navBars/bigNav/bigNav";
 import Navbar from "@/components/navBars/navbar";
 // import HouseMoney from "@/components/svgComponents/houseMoney/houseMoney";
-import TextAndList from "@/components/textAndList/textAndList";
+
 import Accordion from "@/components/textComponents/accordion/accordion";
+import TextAndList from "@/components/textComponents/textAndList/textAndList";
 // import { carouselHeroData} from "@/data/homepageData";
 import {
   //  buyingHerobanner, 
