@@ -6,7 +6,6 @@ import CircleSteps from "@/components/carousels/circleSteps/circleSteps";
 // import StepByStep from "@/components/contentPieces/stepByStep/stepByStep";
 import VerticalImageTextBox from "@/components/contentPieces/verticalImageText/verticalImageTextBox";
 import Footer2 from "@/components/footer/footer";
-import ThreeBoxHero from "@/components/herobanners/threeBoxHero/threeBoxHero";
 // import CarouselHero from "@/components/herobanners/carouselHero/carouselHero";
 // import ServiceHerobanner from "@/components/herobanners/serviceHerobanner/serviceHerobanner";
 // import BigNav from "@/components/navBars/bigNav/bigNav";
@@ -43,7 +42,7 @@ const BuyingPage = () => {
             /> */}
               <Navbar/>
 
-            <ThreeBoxHero
+            <Three
             {...buyingHero}
             />
 

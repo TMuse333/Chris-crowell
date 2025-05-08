@@ -40,7 +40,7 @@ const Homepage = () => {
     
         <ExperienceCard
      
-    
+       bgColor="bg-gradient-to-b from-[#0077b3] to-blue-300"
          {...experienceCardData} buttonText="Let's get in touch"
         link="/contact" />
         <TextAndList {...textAndListData}

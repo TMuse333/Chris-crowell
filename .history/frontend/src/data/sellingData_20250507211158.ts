@@ -1,7 +1,7 @@
 
 
 
-export const sellingHero = {
+export const sellingHero:  = {
   h1: "Sell Your Home in Halifax, Nova Scotia",
   h2: "Simplified and Stress-Free Real Estate Experience",
   pTag:
