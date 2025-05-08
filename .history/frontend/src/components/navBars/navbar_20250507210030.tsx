@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
               )}
             </AnimatePresence>
           </div>
-          <Link href="/about-chris-crowell" className="hover:text-black transition-colors">
+          <Link href="/about" className="hover:text-black transition-colors">
             About
           </Link>
           <Link href="/contact" className="hover:text-black transition-colors">
@@ -134,7 +134,7 @@ const Navbar: React.FC = () => {
               </li>
               <li className="w-full text-center">
                 <Link
-                  href="/about-chris-crowell"
+                  href="/about"
                   className="block py-2 text-lg hover:text-[#00bfff] transition-colors"
                   onClick={() => setIsOpen(false)}
                 >

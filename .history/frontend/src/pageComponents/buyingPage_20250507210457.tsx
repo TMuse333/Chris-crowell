@@ -14,11 +14,10 @@ import Navbar from "@/components/navBars/navbar";
 import TextAndList from "@/components/textAndList/textAndList";
 import Accordion from "@/components/textComponents/accordion/accordion";
 // import { carouselHeroData} from "@/data/homepageData";
-import {
-  //  buyingHerobanner, 
+import { buyingHerobanner, 
     buyingQuestions, buyingDocumentsData,
     buyingCloser,
-    // buyingIntro,
+    buyingIntro,
     circleSteps,
     buyingHero} from "@/data/buyingData";
 import { ThreeBoxHero } from "focusflow-components";

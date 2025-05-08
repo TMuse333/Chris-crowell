@@ -7,18 +7,17 @@ import CircleSteps from "@/components/carousels/circleSteps/circleSteps";
 import VerticalImageTextBox from "@/components/contentPieces/verticalImageText/verticalImageTextBox";
 import Footer2 from "@/components/footer/footer";
 // import CarouselHero from "@/components/herobanners/carouselHero/carouselHero";
-// import ServiceHerobanner from "@/components/herobanners/serviceHerobanner/serviceHerobanner";
-// import BigNav from "@/components/navBars/bigNav/bigNav";
+import ServiceHerobanner from "@/components/herobanners/serviceHerobanner/serviceHerobanner";
+import BigNav from "@/components/navBars/bigNav/bigNav";
 import Navbar from "@/components/navBars/navbar";
-// import HouseMoney from "@/components/svgComponents/houseMoney/houseMoney";
+import HouseMoney from "@/components/svgComponents/houseMoney/houseMoney";
 import TextAndList from "@/components/textAndList/textAndList";
 import Accordion from "@/components/textComponents/accordion/accordion";
 // import { carouselHeroData} from "@/data/homepageData";
-import {
-  //  buyingHerobanner, 
+import { buyingHerobanner, 
     buyingQuestions, buyingDocumentsData,
     buyingCloser,
-    // buyingIntro,
+    buyingIntro,
     circleSteps,
     buyingHero} from "@/data/buyingData";
 import { ThreeBoxHero } from "focusflow-components";

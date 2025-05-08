@@ -19,7 +19,7 @@ import { ExperienceCard } from "focusflow-components";
 const ImageTextBox = dynamic(() => import("@/components/contentPieces/ImageTextBox/imageTextBox"));
 import  ParallaxText  from "@/components/contentPieces/parallaxText/parallaxText";
 import GoogleMap from "@/components/contentPieces/googleMap/googleMap";
-// import ExperienceCard2 from "@/components/contentPieces/experienceCard/experienceCard";
+import ExperienceCard2 from "@/components/contentPieces/experienceCard/experienceCard";
 import Navbar from "@/components/navBars/navbar";
 const TextAndList = dynamic(() => import("@/components/textAndList/textAndList"));
 const HouseMoney = dynamic(() => import("@/components/svgComponents/houseMoney/houseMoney"));

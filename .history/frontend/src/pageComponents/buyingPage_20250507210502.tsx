@@ -18,7 +18,7 @@ import {
   //  buyingHerobanner, 
     buyingQuestions, buyingDocumentsData,
     buyingCloser,
-    // buyingIntro,
+    buyingIntro,
     circleSteps,
     buyingHero} from "@/data/buyingData";
 import { ThreeBoxHero } from "focusflow-components";

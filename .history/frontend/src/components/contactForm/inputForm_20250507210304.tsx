@@ -37,7 +37,7 @@ const InputForm: React.FC<InputFormProps> = ({ title, description, questions }) 
 
     return (
         <div className="text-white w-[80vw] lg:w-[50vw] md:max-w-[400px] p-6 rounded-lg ml-auto mr-auto 
-        flex justify-center items-center">
+        flex justify-center items-center ">
             {title && <h3 className="text-3xl mb-4 sm:text-4xl md:text-5xl">{title}</h3>}
             {description && <p className="text-lg mb-6 w-[100%] text-left md:text-2xl sm:text-xl">{description}</p>}
             <ul className="pt-5 text-black text-center w-screen mr-auto">

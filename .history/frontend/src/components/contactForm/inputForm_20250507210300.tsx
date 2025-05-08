@@ -1,7 +1,5 @@
 import { useGeneralContext } from '@/context/context';
-import React from 'react';
-
-
+import React, { useEffect, useRef } from 'react';
 
 interface Question {
     question: string;
@@ -10,8 +8,8 @@ interface Question {
     choices?: string[];
     isEmail?: boolean;
     isPhoneNumber?: boolean;
-    required?:boolean,
-    title:string
+    required?: boolean;
+    title: string;
 }
 
 interface InputFormProps {
@@ -21,7 +19,8 @@ interface InputFormProps {
 }
 
 const InputForm: React.FC<InputFormProps> = ({ title, description, questions }) => {
-    const { applicationFormState, setApplicationFormState } = useGeneralContext()
+    const { applicationFormState, setApplicationFormState } = useGeneralContext();
+    const firstInputRef = useRef<HTMLInputElement | null>(null);
 
     const handleChange = (title: string, value: string) => {
         setApplicationFormState((prevState) => ({
@@ -30,25 +29,21 @@ const InputForm: React.FC<InputFormProps> = ({ title, description, questions }) 
         }));
     };
 
-    
-    
-
-    // useEffect(() => {
-    //     console.log(applicationFormState);
-    // }, [applicationFormState]);
+    useEffect(() => {
+        if (firstInputRef.current) {
+            firstInputRef.current.focus();
+        }
+    }, []); // Runs once when the component mounts
 
     return (
         <div className="text-white w-[80vw] lg:w-[50vw] md:max-w-[400px] p-6 rounded-lg ml-auto mr-auto 
-        flex justify-center items-center  ">
+        flex justify-center items-center bg-red-200">
             {title && <h3 className="text-3xl mb-4 sm:text-4xl md:text-5xl">{title}</h3>}
             {description && <p className="text-lg mb-6 w-[100%] text-left md:text-2xl sm:text-xl">{description}</p>}
-            <ul className="pt-5 text-black text-center  
-            w-screen mr-auto
-            ">
+            <ul className="pt-5 text-black text-center w-screen mr-auto">
                 {questions.map((question, index) => (
-                    <li key={index} className="mb-4 w-[80vw] md:max-w-[400px]  ">
-                        <label className="block text-left mb-2 text-lg md:text-xl 
-                      placeholder:text-sm">
+                    <li key={index} className="mb-4 w-[80vw] md:max-w-[400px]">
+                        <label className="block text-left mb-2 text-lg md:text-xl">
                             {question.question}
                         </label>
                         {question.multipleChoices ? (
@@ -62,18 +57,19 @@ const InputForm: React.FC<InputFormProps> = ({ title, description, questions }) 
                                                 checked={applicationFormState[`${question.title}-${choice}`] === 'true'}
                                                 onChange={(e) => handleChange(`${question.title}-${choice}`, e.target.checked ? 'true' : '')}
                                             />
-                                            <span className="text-lg md:text-xl ">{choice}</span>
+                                            <span className="text-lg md:text-xl">{choice}</span>
                                         </label>
                                     </div>
                                 ))}
                             </div>
                         ) : (
                             <input
+                                ref={index === 0 ? firstInputRef : null} // Focus on the first input
                                 type="text"
                                 placeholder={question.placeholder}
                                 value={applicationFormState[question.title] || ''}
                                 onChange={(e) => handleChange(question.title, e.target.value)}
-                                className="w-full p-2 rounded max-w-[1500px] mr-auto ml-auto text-lg md:text-xl "
+                                className="w-full p-2 rounded max-w-[1500px] mr-auto ml-auto text-lg md:text-xl"
                             />
                         )}
                     </li>

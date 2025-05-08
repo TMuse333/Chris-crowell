@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
               )}
             </AnimatePresence>
           </div>
-          <Link href="/about-chris-crowell" className="hover:text-black transition-colors">
+          <Link href="/about" className="hover:text-black transition-colors">
             About
           </Link>
           <Link href="/contact" className="hover:text-black transition-colors">
