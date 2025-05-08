@@ -180,7 +180,7 @@ export const testimonialsData = {
     src: "/chris-seated.webp",
     alt: "Chris - Your Trusted Realtor",
     description:
-    "Choosing the right realtor makes all the difference. Chris Crowell combines deep local knowledge, proven results, and a commitment to putting your goals first. Whether you're buying or selling, Chris ensures the process is smooth, informed, and tailored to your needs. Get his free PDF guide for expert tips and smart strategies that work.",
+    "Choosing the right realtor makes all the difference. Chris Crowell combines deep local knowledge, proven results, and a commitment to putting your goals first. Whether you're buying or selling, Chris ensures the process is smooth, informed, and tailored to your needs. ",
   
     listAspects: [
       {

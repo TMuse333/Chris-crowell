@@ -2,7 +2,8 @@
 import React, { useMemo } from "react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-
+import Image from "next/image";
+import logo from '../../../../public/logo.webp'
 export interface ThreeBoxHeroProps {
   h1: string;
 
@@ -148,10 +149,16 @@ const ThreeBoxHero = ({
       variants={containerVariants}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
-      className={`w-screen md:h-screen flex justify-center items-center flex-col ${bgColor ? bgColor : ""}
+      className={`w-screen md:h-screen flex justify-center items-center mt-8 flex-col ${bgColor ? bgColor : ""}
       ${textColor ? `${textColor}` : ''}`}
       style={backgroundStyle}
     >
+        <Image
+        src={logo}
+        alt='logo'
+        width={600}
+        height={1300}
+        />
       <motion.h1
         variants={textVariants}
         className="text-sm px-4 sm:text-md mb-4 mt-8 sm:text-md md:text-lg font-semibold text-center mb-4 "

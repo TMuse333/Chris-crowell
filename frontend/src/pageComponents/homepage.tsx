@@ -34,9 +34,11 @@ const Homepage = () => {
   return (
     <main className="w-screen ">
       {/* <BigNav excludedLink="Home" /> */}
-<Navbar/>
+<Navbar
+excludedLink="Home"/>
      
-      <section className="overflow-x-hidden bg-gradient-to-tr from-blue-200 to-blue-100">
+      <section className="overflow-x-hidden bg-gradient-to-tr from-blue-200 to-blue-100
+      mt-12">
         <FullBodyHero />
 
     

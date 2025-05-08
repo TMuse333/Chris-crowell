@@ -40,10 +40,11 @@ const InputForm: React.FC<InputFormProps> = ({ title, description, questions }) 
         flex justify-center items-center ">
             {title && <h3 className="text-3xl mb-4 sm:text-4xl md:text-5xl">{title}</h3>}
             {description && <p className="text-lg mb-6 w-[100%] text-left md:text-2xl sm:text-xl">{description}</p>}
-            <ul className="pt-5 text-black text-center w-screen mr-auto">
+            <ul className="pt-5 text-black  text-center w-screen mr-auto">
                 {questions.map((question, index) => (
                     <li key={index} className="mb-4 w-[80vw] md:max-w-[400px]">
-                        <label className="block text-left mb-2 text-lg md:text-xl">
+                        <label className="block text-left mb-2 text-lg md:text-xl
+                        ">
                             {question.question}
                         </label>
                         {question.multipleChoices ? (
@@ -69,7 +70,8 @@ const InputForm: React.FC<InputFormProps> = ({ title, description, questions }) 
                                 placeholder={question.placeholder}
                                 value={applicationFormState[question.title] || ''}
                                 onChange={(e) => handleChange(question.title, e.target.value)}
-                                className="w-full p-2 rounded max-w-[1500px] mr-auto ml-auto text-lg md:text-xl"
+                                className="w-full p-2 rounded max-w-[1500px] mr-auto ml-auto text-lg md:text-xl
+                                bg-white"
                             />
                         )}
                     </li>

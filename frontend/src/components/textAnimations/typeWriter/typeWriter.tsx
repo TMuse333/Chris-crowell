@@ -54,7 +54,7 @@ const BlockInTextCard = ({
         >
    
       <button className=" rounded-full border border-white p-3 text-lg sm:text-xl border-3 font-medium transition-colors hover:bg-neutral-950 hover:text-neutral-100
-      mr-4">
+      mr-4 mt-4">
         Contact
       </button>
       </Link>
@@ -88,10 +88,11 @@ const Typewrite = ({ examples }: { examples: string[] }) => {
   }, []);
 
   return (
-    <p className="mb-2.5 text-lg sm:text-xl  md:text-2xl font-light uppercase
+    <p className="mb-2.5 text-lg sm:text-xl  md:text-2xl
+    lg:text-3xl font-light uppercase
     font-semibold
     relative z-[3]">
-      <span className="inline-block size-2 bg-neutral-950" />
+      <span className="inline-block size-2 bg-white rounded" />
       <span className="ml-3">
         
         {examples[exampleIndex].split("").map((l, i) => (
