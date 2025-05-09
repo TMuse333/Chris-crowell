@@ -63,7 +63,7 @@ const Navbar: React.FC<NavbarProps> = ({ excludedLink }) => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -10 }}
                       transition={{ duration: 0.2 }}
-                      className="absolute top-0 left-0 bg-[#00bfff] rounded-md shadow-lg py-2 w-48"
+                      className="absolute top left-0 bg-[#1a1a1a] rounded-md shadow-lg py-2 w-48"
                       onMouseEnter={() => setIsServicesOpen(true)}
                       onMouseLeave={() => setIsServicesOpen(false)}
                     >
@@ -113,25 +113,25 @@ const Navbar: React.FC<NavbarProps> = ({ excludedLink }) => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden fixed w-screen top-[49px] bg-[#00bfff] border-t border-gray-700"
+            className="md:hidden bg-[#0e0e0e] border-t border-gray-700"
           >
             <ul className="flex flex-col items-center py-4">
               {links.map((link) =>
                 link.isDropdown ? (
                   <li key="services" className="w-full text-center">
                     <button
-                      className="block py-2 text-lg hover:text-black transition-colors w-full"
+                      className="block py-2 text-lg hover:text-[#00bfff] transition-colors w-full"
                       onClick={toggleServices}
                     >
                       Services
                     </button>
                     {isServicesOpen && (
-                      <ul className="bg-[#0095cc]  py-2">
+                      <ul className="bg-[#1a1a1a] py-2">
                         {services.map((service) => (
                           <li key={service.name}>
                             <Link
                               href={service.href}
-                              className="block px-4 py-2 text-sm hover:bg-[#0077aa] hover:text-black transition-colors"
+                              className="block px-4 py-2 text-sm hover:bg-[#00bfff] hover:text-white transition-colors"
                               onClick={() => setIsOpen(false)}
                             >
                               {service.name}
@@ -145,7 +145,7 @@ const Navbar: React.FC<NavbarProps> = ({ excludedLink }) => {
                   <li key={link.name} className="w-full text-center">
                     <Link
                       href={link.href!}
-                      className="block py-2 text-lg hover:text-black transition-colors"
+                      className="block py-2 text-lg hover:text-[#00bfff] transition-colors"
                       onClick={() => setIsOpen(false)}
                     >
                       {link.name}

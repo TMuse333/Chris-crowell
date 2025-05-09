@@ -126,12 +126,12 @@ const Navbar: React.FC<NavbarProps> = ({ excludedLink }) => {
                       Services
                     </button>
                     {isServicesOpen && (
-                      <ul className="bg-[#0095cc]  py-2">
+                      <ul className="bg-[#1a1a1a] py-2">
                         {services.map((service) => (
                           <li key={service.name}>
                             <Link
                               href={service.href}
-                              className="block px-4 py-2 text-sm hover:bg-[#0077aa] hover:text-black transition-colors"
+                              className="block px-4 py-2 text-sm hover:bg-[#00bfff] hover:text-black transition-colors"
                               onClick={() => setIsOpen(false)}
                             >
                               {service.name}
