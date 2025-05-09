@@ -32,7 +32,7 @@ const Navbar: React.FC<NavbarProps> = ({ excludedLink }) => {
   ].filter(link => link.name.toLowerCase() !== excludedLink?.toLowerCase());
 
   return (
-    <nav className="w-full h-[50px] bg-[#00bfff] text-gray-200 fixed top-0 z-50">
+    <nav className="w-full h-[25px] bg-[#00bfff] text-gray-200 fixed top-0 z-50">
       <div className="max-w-[1200px] mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" className="text-2xl font-bold text-white">
           <Image

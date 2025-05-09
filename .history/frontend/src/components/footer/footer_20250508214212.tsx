@@ -92,7 +92,7 @@ const Footer2: React.FC<props> = ({ excludedLink }) => {
         alt="Chris Crowell Logo"
         width={600}
         height={1300}
-        className="w-[10vw] object-contain mx-auto max-w-[150px]"
+        className="w-[10vw] object-contain mr-auto max-w-[150px]"
       />
       <Image
         src={logo}

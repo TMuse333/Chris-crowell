@@ -37,8 +37,7 @@ const Homepage = () => {
 <Navbar
 excludedLink="Home"/>
      
-      <section className="overflow-x-hidden bg-gradient-to-tr from-blue-200 to-blue-100
-      mt-12 sm:mt-6 md:mt-0">
+      <section className="overflow-x-hidden bg-gradient-to-tr from-blue-200 to-blue-100">
         <FullBodyHero />
 
     

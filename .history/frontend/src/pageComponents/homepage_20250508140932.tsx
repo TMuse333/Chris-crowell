@@ -21,7 +21,7 @@ import  ParallaxText  from "@/components/contentPieces/parallaxText/parallaxText
 import GoogleMap from "@/components/contentPieces/googleMap/googleMap";
 // import ExperienceCard2 from "@/components/contentPieces/experienceCard/experienceCard";
 import Navbar from "@/components/navBars/navbar";
-
+import CardOfExperience from "@/components/cardOfExperience/cardOfExperience";
 import TextAndList from "@/components/textComponents/textAndList/textAndList";
 
 const HouseMoney = dynamic(() => import("@/components/svgComponents/houseMoney/houseMoney"));
@@ -34,11 +34,9 @@ const Homepage = () => {
   return (
     <main className="w-screen ">
       {/* <BigNav excludedLink="Home" /> */}
-<Navbar
-excludedLink="Home"/>
+<Navbar/>
      
-      <section className="overflow-x-hidden bg-gradient-to-tr from-blue-200 to-blue-100
-      mt-12 sm:mt-6 md:mt-0">
+      <section className="overflow-x-hidden bg-gradient-to-tr from-blue-200 to-blue-100">
         <FullBodyHero />
 
     
@@ -47,7 +45,7 @@ excludedLink="Home"/>
     
          {...experienceCardData} buttonText="Let's get in touch"
         link="/contact" />
-
+        
         <TextAndList {...textAndListData}
         link="/contact" />
 

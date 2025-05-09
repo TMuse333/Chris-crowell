@@ -3,7 +3,7 @@ import Link from "next/link";
 import logo from '../../../public/white-network.webp';
 import Image from "next/image";
 import { motion } from 'framer-motion';
-import remax from '../../../public/remax-ballon.webp'
+
 interface props {
   excludedLink: string;
 }
@@ -59,16 +59,6 @@ const Footer2: React.FC<props> = ({ excludedLink }) => {
         },
       ],
     },
-    {
-      name: "Podcast",
-      listSubMenu: false,
-      secondaryLinks: [
-        {
-          name: 'Podcast',
-          destination: '/podcast',
-        },
-      ],
-    },
   ];
 
   const filteredLinks = bigLinks
@@ -84,16 +74,9 @@ const Footer2: React.FC<props> = ({ excludedLink }) => {
     });
 
   return (
-    <footer className="w-screen relative flex flex-col items-center justify-center mx-auto py-8 bg-black">
+    <footer className="w-screen relative flex flex-col items-center justify-center mx-auto py-8 bg-gray-800">
       <h6 className="text-3xl sm:text-4xl font-semibold mb-8">Site map</h6>
 
-      <Image
-        src={remax}
-        alt="Chris Crowell Logo"
-        width={600}
-        height={1300}
-        className="w-[10vw] object-contain mx-auto max-w-[150px]"
-      />
       <Image
         src={logo}
         alt="Chris Crowell Logo"
@@ -120,7 +103,7 @@ const Footer2: React.FC<props> = ({ excludedLink }) => {
                 </h3>
                 <ul className="list-none p-0">
                   {link.secondaryLinks.map((link2, innerIndex) => (
-                    <li key={innerIndex} className="mb-2 text-center text-white hover:text-[#00bfff]">
+                    <li key={innerIndex} className="mb-2 text-center hover:text-[#00bfff]">
                       <Link href={link2.destination}>
                         {link2.name}
                       </Link>

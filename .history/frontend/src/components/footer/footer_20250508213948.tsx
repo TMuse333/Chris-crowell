@@ -84,15 +84,15 @@ const Footer2: React.FC<props> = ({ excludedLink }) => {
     });
 
   return (
-    <footer className="w-screen relative flex flex-col items-center justify-center mx-auto py-8 bg-black">
+    <footer className="w-screen relative flex flex-col items-center justify-center mx-auto py-8 bg-gray-800">
       <h6 className="text-3xl sm:text-4xl font-semibold mb-8">Site map</h6>
 
       <Image
-        src={remax}
+        src={logo}
         alt="Chris Crowell Logo"
         width={600}
         height={1300}
-        className="w-[10vw] object-contain mx-auto max-w-[150px]"
+        className="w-[70vw] object-contain mx-auto max-w-[350px]"
       />
       <Image
         src={logo}

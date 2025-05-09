@@ -15,15 +15,13 @@ import {
 // import Image from "next/image";
 // Dynamically import components
 import FullBodyHero from "@/components/herobanners/fullBodyHero/fullBodyHero";
-import ExperienceCard from "@/components/cardOfExperience/cardOfExperience";
+import ExperienceCard from "@/components/experienceCard/experienceCard";
 const ImageTextBox = dynamic(() => import("@/components/contentPieces/ImageTextBox/imageTextBox"));
 import  ParallaxText  from "@/components/contentPieces/parallaxText/parallaxText";
 import GoogleMap from "@/components/contentPieces/googleMap/googleMap";
 // import ExperienceCard2 from "@/components/contentPieces/experienceCard/experienceCard";
 import Navbar from "@/components/navBars/navbar";
-
-import TextAndList from "@/components/textComponents/textAndList/textAndList";
-
+const TextAndList = dynamic(() => import("@/components/textAndList/textAndList"));
 const HouseMoney = dynamic(() => import("@/components/svgComponents/houseMoney/houseMoney"));
 const VerticalImageTextBox = dynamic(() => import("@/components/contentPieces/verticalImageText/verticalImageTextBox"));
 const Footer2 = dynamic(() => import("@/components/footer/footer"));
@@ -34,22 +32,19 @@ const Homepage = () => {
   return (
     <main className="w-screen ">
       {/* <BigNav excludedLink="Home" /> */}
-<Navbar
-excludedLink="Home"/>
+<Navbar/>
      
-      <section className="overflow-x-hidden bg-gradient-to-tr from-blue-200 to-blue-100
-      mt-12 sm:mt-6 md:mt-0">
+      <section className="overflow-x-hidden bg-gradient-to-tr from-blue-200 to-blue-100">
         <FullBodyHero />
 
     
-        <ExperienceCard
+        <CardO
      
     
          {...experienceCardData} buttonText="Let's get in touch"
         link="/contact" />
-
-        <TextAndList {...textAndListData}
-        link="/contact" />
+        {/* <TextAndList {...textAndListData}
+        link="/contact" /> */}
 
 <section className="w-screen py-8
  bg-gradient-to-b from-[#0077b3] to-blue-300 mb-[4rem]">
