@@ -57,7 +57,7 @@ export const lorem60 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit
   export const imageTextBoxData = {
     // src: '/sell-home.jpg', // Replace with your image source
     alt: 'Lorem Ipsum Team',
-    src:'/chris-crowell-sign.jpeg',
+    src:''
     description: "Selling your home doesn’t have to be overwhelming. As a dedicated RE/MAX Nova agent, I make the process smooth, fast, and rewarding. With expert market insights, strategic pricing, and top-tier negotiation skills, I ensure you get the best deal possible. Whether you\'re upgrading, downsizing, or relocating, I handle the details so you can focus on your next move with confidence. As a trusted real estate agent in Nova Scotia, I’m here to help you sell quickly and for the right price.\n\n" +
     "Let’s work together to navigate the selling process and secure the best deal for your home, all while minimizing stress and maximizing value.",
 

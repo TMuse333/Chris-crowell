@@ -55,9 +55,8 @@ export const carouselHeroData = {
 export const lorem60 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam nobis laborum porro voluptas molestias nihil, eum ea velit quae, perspiciatis blanditiis dolorum culpa unde est eos earum a rem eveniet accusantium doloremque! Molestias illum inventore quae adipisci esse unde tempore, deleniti sed culpa nulla, sint placeat asperiores commodi? Libero ut tempora ad deserunt beatae facilis cum esse magni quaerat. Quasi nihil perspiciatis culpa minus, voluptates inventore saepe repudiandae reiciendis accusantium fuga exercitationem vero, eligendi voluptatibus nam neque, cumque explicabo vitae tenetur expedita accusamus placeat. Corporis perspiciatis, eius minus debitis ex, ad ducimus, error neque id itaque eligendi quibusdam hic pariatur!"
 
   export const imageTextBoxData = {
-    // src: '/sell-home.jpg', // Replace with your image source
+    src: '/place-holder.jpg', // Replace with your image source
     alt: 'Lorem Ipsum Team',
-    src:'/chris-crowell-sign.jpeg',
     description: "Selling your home doesn’t have to be overwhelming. As a dedicated RE/MAX Nova agent, I make the process smooth, fast, and rewarding. With expert market insights, strategic pricing, and top-tier negotiation skills, I ensure you get the best deal possible. Whether you\'re upgrading, downsizing, or relocating, I handle the details so you can focus on your next move with confidence. As a trusted real estate agent in Nova Scotia, I’m here to help you sell quickly and for the right price.\n\n" +
     "Let’s work together to navigate the selling process and secure the best deal for your home, all while minimizing stress and maximizing value.",
 
@@ -100,7 +99,7 @@ export const lorem60 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit
     link: '/contact',
     reverse: false,
     aspectHeader: '',
-    
+    o
   };
 
   //interface Props {
