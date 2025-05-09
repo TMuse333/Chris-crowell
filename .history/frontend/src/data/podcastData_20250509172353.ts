@@ -50,7 +50,7 @@ export const podcastCountup = {
 
   export const podcastExperienceCard = {
     title: "The Halifax Network Podcast – Conversations That Build Success",
-    src: "/podcast-logo.jpg",
+    src: "/podcast-logo",
     alt: "Chris hosting The Halifax Network Podcast",
     description: 
       "The Halifax Network Podcast dives into the world of entrepreneurship, business growth, and real estate. Featuring industry leaders, successful entrepreneurs, and real estate experts, each episode delivers insights to help you level up in your career and investments." +
