@@ -24,7 +24,7 @@ import Navbar from "@/components/navBars/navbar";
 
 import TextAndList from "@/components/textComponents/textAndList/textAndList";
 
-
+const HouseMoney = dynamic(() => import("@/components/svgComponents/houseMoney/houseMoney"));
 const VerticalImageTextBox = dynamic(() => import("@/components/contentPieces/verticalImageText/verticalImageTextBox"));
 const Footer2 = dynamic(() => import("@/components/footer/footer"));
 const GoogleReviews = dynamic(() => import("@/components/googleReviews/googleReviews"));
@@ -59,7 +59,7 @@ excludedLink="Home"/>
         textColor="text-white"
          reverse 
          
-       />
+      } />
 
       <div className="bg-white rounded-md w-[90vw]
       h-[5px] max-w-[1200px] mx-auto mb-8"

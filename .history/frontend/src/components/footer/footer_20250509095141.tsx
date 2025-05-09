@@ -1,4 +1,3 @@
-
 import React from "react";
 import Link from "next/link";
 import logo from '../../../public/white-network.webp';
@@ -130,6 +129,16 @@ const Footer2: React.FC<Props> = ({ excludedLink }) => {
               )}
             </div>
           ))}
+        </div>
+
+        {/* Realtor Contact Info */}
+        <div className="border-t border-gray-800 pt-8 mb-12">
+          <h3 className="text-xl font-semibold mb-4 text-center">Contact Chris Crowell</h3>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-6 text-gray-300">
+            <p>Name: Chris Crowell, REALTOR®</p>
+            <p>Phone: <a href="tel:+1234567890" className="hover:text-[#00bfff] transition-colors">+1 (234) 567-890</a></p>
+            <p>Email: <a href="mailto:chris@remaxnova.com" className="hover:text-[#00bfff] transition-colors">chris@remaxnova.com</a></p>
+          </div>
         </div>
 
         {/* Bottom Section */}

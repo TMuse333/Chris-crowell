@@ -1,4 +1,4 @@
-
+```typescript
 import React from "react";
 import Link from "next/link";
 import logo from '../../../public/white-network.webp';
@@ -168,3 +168,4 @@ const Footer2: React.FC<Props> = ({ excludedLink }) => {
 };
 
 export default Footer2;
+```

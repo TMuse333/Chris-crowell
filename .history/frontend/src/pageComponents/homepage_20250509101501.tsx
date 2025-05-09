@@ -24,7 +24,7 @@ import Navbar from "@/components/navBars/navbar";
 
 import TextAndList from "@/components/textComponents/textAndList/textAndList";
 
-
+const HouseMoney = dynamic(() => import("@/components/svgComponents/houseMoney/houseMoney"));
 const VerticalImageTextBox = dynamic(() => import("@/components/contentPieces/verticalImageText/verticalImageTextBox"));
 const Footer2 = dynamic(() => import("@/components/footer/footer"));
 const GoogleReviews = dynamic(() => import("@/components/googleReviews/googleReviews"));

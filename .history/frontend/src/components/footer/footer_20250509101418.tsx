@@ -168,3 +168,4 @@ const Footer2: React.FC<Props> = ({ excludedLink }) => {
 };
 
 export default Footer2;
+```
