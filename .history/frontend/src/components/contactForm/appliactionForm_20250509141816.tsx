@@ -50,7 +50,12 @@ const ApplicationForm = () => {
                     name: applicationFormState.name,
                     email: applicationFormState.email,
                     phone: applicationFormState.phone,
-                    intent: applicationFormState.intent, // single string
+                    intent: {
+                        'intent-Buy': applicationFormState.intentBuy?.toString() || 'false',
+                        'intent-Sell': applicationFormState.intentSell?.toString() || 'false',
+                        'intent-Both': applicationFormState.intentBoth?.toString() || 'false',
+                        'intent-Just browsing': applicationFormState.intentJustBrowsing?.toString() || 'false',
+                    },
                     location: applicationFormState.location,
                     timeline: applicationFormState.timeline,
                     budget: applicationFormState.budget,
@@ -68,7 +73,10 @@ const ApplicationForm = () => {
                 name: '',
                 email: '',
                 phone: '',
-                intent: '',
+                intentBuy: false,
+                intentSell: false,
+                intentBoth: false,
+                intentJustBrowsing: false,
                 location: '',
                 timeline: '',
                 budget: '',
@@ -79,7 +87,6 @@ const ApplicationForm = () => {
             alert('Failed to submit form.');
         }
     };
-    
     
 
     return (

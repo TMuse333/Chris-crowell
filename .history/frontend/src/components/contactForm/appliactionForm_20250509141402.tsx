@@ -12,8 +12,6 @@ import {Check} from 'lucide-react'
 
 const ApplicationForm = () => {
 
-    const {setApplicationFormState} = useGeneralContext()
-
     const aspects = [
         "Expert advice tailored to the Halifax market",
         "Clear, honest answers—no pressure, no fluff",
@@ -39,48 +37,66 @@ const ApplicationForm = () => {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-    
+
+        // Validate required fields
+        if (!applicationFormState.name) {
+            alert('Please enter your name');
+            return;
+        }
+        if (!applicationFormState.email || !isValidEmail(applicationFormState.email)) {
+            alert('Please enter a valid email address');
+            return;
+        }
+        if (!applicationFormState.phone || !isValidPhone(applicationFormState.phone)) {
+            alert('Please enter a valid phone number (10–15 digits)');
+            return;
+        }
+        // Check if at least one intent is selected
+        const intentSelected = questions
+            .find(q => q.title === 'intent')?.choices
+            ?.some(choice => applicationFormState[`intent-${choice}`] === 'true');
+        if (!intentSelected) {
+            alert('Please select at least one intent (Buy, Sell, Both, Just browsing)');
+            return;
+        }
+
         try {
-            const response = await fetch('/api/sendEmail', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
+            const response = await axios.post('/api/sendEmail', {
+                name: applicationFormState.name,
+                email: applicationFormState.email,
+                phone: applicationFormState.phone,
+                intent: {
+                    'intent-Buy': applicationFormState['intent-Buy'] || '',
+                    'intent-Sell': applicationFormState['intent-Sell'] || '',
+                    'intent-Both': applicationFormState['intent-Both'] || '',
+                    'intent-Just browsing': applicationFormState['intent-Just browsing'] || ''
                 },
-                body: JSON.stringify({
-                    name: applicationFormState.name,
-                    email: applicationFormState.email,
-                    phone: applicationFormState.phone,
-                    intent: applicationFormState.intent, // single string
-                    location: applicationFormState.location,
-                    timeline: applicationFormState.timeline,
-                    budget: applicationFormState.budget,
-                    message: applicationFormState.message,
-                }),
+                location: applicationFormState.location || '',
+                timeline: applicationFormState.timeline || '',
+                budget: applicationFormState.budget || '',
+                message: applicationFormState.message || ''
             });
-    
-            if (!response.ok) {
-                const errorData = await response.json();
-                throw new Error(errorData.message || 'Failed to send email');
-            }
-    
+
             alert('Form submitted successfully!');
+            // Reset form state
             setApplicationFormState({
                 name: '',
                 email: '',
                 phone: '',
-                intent: '',
+                'intent-Buy': '',
+                'intent-Sell': '',
+                'intent-Both': '',
+                'intent-Just browsing': '',
                 location: '',
                 timeline: '',
                 budget: '',
-                message: '',
+                message: ''
             });
         } catch (error) {
             console.error('Error submitting form:', error);
             alert('Failed to submit form.');
         }
     };
-    
-    
 
     return (
         <section className="w-full  ">

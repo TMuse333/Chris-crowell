@@ -12,8 +12,6 @@ import {Check} from 'lucide-react'
 
 const ApplicationForm = () => {
 
-    const {setApplicationFormState} = useGeneralContext()
-
     const aspects = [
         "Expert advice tailored to the Halifax market",
         "Clear, honest answers—no pressure, no fluff",
@@ -39,48 +37,30 @@ const ApplicationForm = () => {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+
     
-        try {
-            const response = await fetch('/api/sendEmail', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    name: applicationFormState.name,
-                    email: applicationFormState.email,
-                    phone: applicationFormState.phone,
-                    intent: applicationFormState.intent, // single string
-                    location: applicationFormState.location,
-                    timeline: applicationFormState.timeline,
-                    budget: applicationFormState.budget,
-                    message: applicationFormState.message,
-                }),
-            });
-    
-            if (!response.ok) {
-                const errorData = await response.json();
-                throw new Error(errorData.message || 'Failed to send email');
-            }
-    
-            alert('Form submitted successfully!');
-            setApplicationFormState({
-                name: '',
-                email: '',
-                phone: '',
-                intent: '',
-                location: '',
-                timeline: '',
-                budget: '',
-                message: '',
-            });
-        } catch (error) {
-            console.error('Error submitting form:', error);
-            alert('Failed to submit form.');
-        }
+        // try {
+        //     const response = await axios.post('/api/sendEmail', {
+        //         name: applicationFormState.name,
+        //         email: applicationFormState.email,
+        //         phone: applicationFormState.phone,
+        //         city: applicationFormState.city,
+        //         province: applicationFormState.province,
+        //         reason: applicationFormState.reason,
+        //         time: applicationFormState.time,
+        //         address: applicationFormState.address,
+
+        //     });
+        //     // console.log(response.data);
+        //     alert('Form submitted successfully!');
+        //     setApplicationFormState({ name: '', email: '', phone: '', projectDetails: '' });
+        // } catch (error) {
+        //     // console.log('username',process.env.EMAIL_USER);
+        //     // console.log('password',process.env.GMAIL_PASSWORD)
+        //     console.error('Error submitting form:', error);
+        //     alert('Failed to submit form.');
+        // }
     };
-    
-    
 
     return (
         <section className="w-full  ">

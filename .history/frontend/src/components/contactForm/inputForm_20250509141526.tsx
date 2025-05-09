@@ -29,34 +29,22 @@ const InputForm: React.FC<InputFormProps> = ({ title, description, questions }) 
         }));
     };
 
-    const handleMultipleChoiceChange = (title: string, choice: string, isChecked: boolean) => {
-        setApplicationFormState((prevState) => {
-            const currentChoices = prevState[title]?.split(', ').filter(Boolean) || [];
-            const updatedChoices = isChecked
-                ? [...new Set([...currentChoices, choice])]
-                : currentChoices.filter((c) => c !== choice);
-
-            return {
-                ...prevState,
-                [title]: updatedChoices.join(', ')
-            };
-        });
-    };
-
     useEffect(() => {
         if (firstInputRef.current) {
             firstInputRef.current.focus();
         }
-    }, []);
+    }, []); // Runs once when the component mounts
 
     return (
-        <div className="text-white w-[80vw] lg:w-[50vw] md:max-w-[400px] p-6 rounded-lg ml-auto mr-auto flex justify-center items-center">
+        <div className="text-white w-[80vw] lg:w-[50vw] md:max-w-[400px] p-6 rounded-lg ml-auto mr-auto 
+        flex justify-center items-center ">
             {title && <h3 className="text-3xl mb-4 sm:text-4xl md:text-5xl">{title}</h3>}
-            {description && <p className="text-lg mb-6 w-full text-left md:text-2xl sm:text-xl">{description}</p>}
-            <ul className="pt-5 text-black text-center w-screen mr-auto">
+            {description && <p className="text-lg mb-6 w-[100%] text-left md:text-2xl sm:text-xl">{description}</p>}
+            <ul className="pt-5 text-black  text-center w-screen mr-auto">
                 {questions.map((question, index) => (
                     <li key={index} className="mb-4 w-[80vw] md:max-w-[400px]">
-                        <label className="block text-left mb-2 text-lg md:text-xl">
+                        <label className="block text-left mb-2 text-lg md:text-xl
+                        ">
                             {question.question}
                         </label>
                         {question.multipleChoices ? (
@@ -67,18 +55,8 @@ const InputForm: React.FC<InputFormProps> = ({ title, description, questions }) 
                                             <input
                                                 type="checkbox"
                                                 className="mr-2"
-                                                checked={
-                                                    applicationFormState[question.title]
-                                                        ?.split(', ')
-                                                        .includes(choice) || false
-                                                }
-                                                onChange={(e) =>
-                                                    handleMultipleChoiceChange(
-                                                        question.title,
-                                                        choice,
-                                                        e.target.checked
-                                                    )
-                                                }
+                                                checked={applicationFormState[`${question.title}-${choice}`] === 'true'}
+                                                onChange={(e) => handleChange(`${question.title}-${choice}`, e.target.checked ? 'true' : '')}
                                             />
                                             <span className="text-lg md:text-xl">{choice}</span>
                                         </label>
@@ -87,12 +65,13 @@ const InputForm: React.FC<InputFormProps> = ({ title, description, questions }) 
                             </div>
                         ) : (
                             <input
-                                ref={index === 0 ? firstInputRef : null}
+                                ref={index === 0 ? firstInputRef : null} // Focus on the first input
                                 type="text"
                                 placeholder={question.placeholder}
                                 value={applicationFormState[question.title] || ''}
                                 onChange={(e) => handleChange(question.title, e.target.value)}
-                                className="w-full p-2 rounded max-w-[1500px] mr-auto ml-auto text-lg md:text-xl bg-white"
+                                className="w-full p-2 rounded max-w-[1500px] mr-auto ml-auto text-lg md:text-xl
+                                bg-white"
                             />
                         )}
                     </li>
