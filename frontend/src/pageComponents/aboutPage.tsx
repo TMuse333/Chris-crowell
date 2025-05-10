@@ -8,10 +8,11 @@ import { aboutImageTextBox } from "@/data/aboutData";
 import CarouselHero from "@/components/herobanners/carouselHero/carouselHero";
 import { carouselHeroData } from "@/data/homepageData";
 import ImageTextBox from "@/components/contentPieces/ImageTextBox/imageTextBox";
-import BigNav from "@/components/navBars/bigNav/bigNav";
+
 import Footer2 from "@/components/footer/footer";
 // import ContactCard from "@/components/footer/contactCard/contactCard";
 import GoogleMap from "@/components/contentPieces/googleMap/googleMap";
+import Navbar from "@/components/navBars/navbar";
 
 const AboutPage = ()=>{
 
@@ -20,9 +21,9 @@ const AboutPage = ()=>{
         <main className="w-screen
         bg-gradient-to-tr from-blue-200 to-blue-100">
 
-            <BigNav
-            excludedLink="About"
-            />
+           <Navbar
+           excludedLink="About"
+           />
 
             <FullBodyHero
             about

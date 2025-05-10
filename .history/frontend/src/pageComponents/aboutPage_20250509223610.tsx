@@ -4,13 +4,14 @@ import FullBodyHero from "@/components/herobanners/fullBodyHero/fullBodyHero";
 // import DisplayBoxes from "@/components/textComponents/displayBoxes/displayBoxes";
 import React from "react";
 
-import { aboutImageTextBox, workCredentials } from "@/data/aboutData";
+import { aboutImageTextBox } from "@/data/aboutData";
 import CarouselHero from "@/components/herobanners/carouselHero/carouselHero";
-import { carouselHeroData, contactData } from "@/data/homepageData";
+import { carouselHeroData } from "@/data/homepageData";
 import ImageTextBox from "@/components/contentPieces/ImageTextBox/imageTextBox";
 import BigNav from "@/components/navBars/bigNav/bigNav";
 import Footer2 from "@/components/footer/footer";
-import ContactCard from "@/components/footer/contactCard/contactCard";
+// import ContactCard from "@/components/footer/contactCard/contactCard";
+import GoogleMap from "@/components/contentPieces/googleMap/googleMap";
 
 const AboutPage = ()=>{
 
@@ -19,11 +20,10 @@ const AboutPage = ()=>{
         <main className="w-screen
         bg-gradient-to-tr from-blue-200 to-blue-100">
 
-            <BigNav
-            excludedLink="About"
-            />
+           <Nav
 
             <FullBodyHero
+            about
             />
 
             <CarouselHero
@@ -39,10 +39,11 @@ const AboutPage = ()=>{
             data={workCredentials}
             /> */}
 
-            <ContactCard
+            {/* <ContactCard
             {...contactData}
-            />
-
+            /> */}
+            
+            <GoogleMap/>
             <Footer2
             excludedLink="More about me"
             />

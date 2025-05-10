@@ -10,7 +10,7 @@ import Footer2 from "@/components/footer/footer";
 
 import ServiceHerobanner from "@/components/herobanners/serviceHerobanner/serviceHerobanner";
 // import ServiceHerobanner from "@/components/herobanners/serviceHerobanner/serviceHerobanner";
-
+import BigNav from "@/components/navBars/bigNav/bigNav";
 import { podcastHero } from "@/data/podcastData";
 // import PodcastSocialLinks from "@/components/podcast/podcastSocialLinks";
 import {
@@ -33,7 +33,7 @@ const PodcastPage = () => {
            alt=""
             /> */}
        <Navbar
-       excludedLink="Podcast"/>
+       excludedLink=""/>
             {/* <CarouselHero
             {...podcastCarouselHero}
             /> */}
