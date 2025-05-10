@@ -32,7 +32,7 @@ const Footer2: React.FC<Props> = ({ excludedLink }) => {
         },
         {
           name: 'Buy a home',
-          destination: '/buy-home-halifax',
+          destination: '/buy-home',
         },
       ],
       listSubMenu: true,

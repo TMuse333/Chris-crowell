@@ -64,7 +64,7 @@ export const lorem60 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit
   
     reverse: false, // Optional: You can set it to true if needed to adjust the layout
     title: 'Sell Faster. Sell Smarter. Sell for More.',
-    buttonLink: '/selling-your-home-halifax', // Link to the About page
+    buttonLink: '/selling-your-home', // Link to the About page
     buttonText: 'Sell my home'
   };
   

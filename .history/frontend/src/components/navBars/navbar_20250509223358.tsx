@@ -17,7 +17,7 @@ const Navbar: React.FC<NavbarProps> = ({ excludedLink }) => {
 
   const services = [
     { name: 'Buying a home', href: '/buy-home-halifax' },
-    { name: 'Selling a home', href: '/selling-your-home-halifax' },
+    { name: 'Selling a home', href: '/selling-your-home' },
   ].filter(service => service.name.toLowerCase() !== excludedLink?.toLowerCase());
 
   const links = [
